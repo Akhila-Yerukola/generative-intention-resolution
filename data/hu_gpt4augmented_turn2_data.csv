@@ -1,0 +1,790 @@
+item_id,task,context,context_without_dialog_prefix,dialog_prefix,dialog,true_intention,incorrect_literal_intention,original_prompt_str,person1,person2,options_dict,intention_pronoun,turn1_true_intention_dialog,turn1_literal_intention_dialog,turn2_response_from_literal_intention,turn2_response_from_true_intention,,
+1,indirectspeech,"Paul has to go to an interview and he's running late. While he's cleaning his shoes he says to his wife, ",Paul has to go to an interview and he's running late. He's cleaning his shoes.  ,"He says to his wife, Jane,  "," ""I want to wear that blue shirt, but it's very creased"". ",He wants his wife to iron his shirt.,He is unhappy that his shirt is wrinkled. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Paul has to go to an interview and he's running late. While he's cleaning his shoes he says to his wife, Jane, ""I want to wear that blue shirt, but it's very creased"". What might he be trying to convey?
+Options:
+1) He wants his wife to iron his shirt.
+2) He is unhappy that his shirt is wrinkled.
+3) He got this shirt on sale.
+4) He got his shoes on sale.
+Answer: ",Paul,Jane,"{""'CorrectNonLiteral'"": 'He wants his wife to iron his shirt.', ""'IncorrectLiteral'"": 'He is unhappy that his shirt is wrinkled.', ""'IncorrectLexicalOverlap'"": 'He got this shirt on sale.', ""'IncorrectAssociative'"": 'He got his shoes on sale.'}",he,"""Could you please iron my shirt, dear?""","""I'm really not pleased with how wrinkled my shirt is.""","I understand, Paul, you are unhappy with the wrinkles in your shirt.","""Sure, I'll iron your shirt now, Paul.""",,
+2,indirectspeech,"Cindy wanted to paint a picture. She got her paints, paper and brushes ready. She has a meeting to go to in 10 minutes. Her dad said to her, ","Cindy wanted to paint a picture. She got her paints, paper and brushes ready. She has a meeting to go to in 10 minutes. ","Her dad said to her, ","""I am not sure that now is the best time for painting."" ",Her dad does not want Cindy to start painting. ,Her dad has some doubts whether Cindy should be painting. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Cindy wanted to paint a picture. She got her paints, paper and brushes ready. She has a meeting to go to in 10 minutes. Her dad said to her, ""I am not sure that now is the best time for painting."" What might he be trying to convey?
+Options:
+1) He wants Cindy to paint a picture for the meeting.
+2) He does not want Cindy to start painting. 
+3) He has some doubts whether Cindy should be painting.
+4) He wants Cindy to create a sculpture.
+Answer: ",Her father,Cindy,"{""'IncorrectLexicalOverlap'"": 'He wants Cindy to paint a picture for the meeting.', ""'CorrectNonLiteral'"": 'He does not want Cindy to start painting. ', ""'IncorrectLiteral'"": 'He has some doubts whether Cindy should be painting.', ""'IncorrectAssociative'"": 'He wants Cindy to create a sculpture.'}",he,"""I don't want you to start painting.""","""I have some doubts about whether you should be painting.""","I understand your concerns, Dad, but I really enjoy painting.","""Okay Dad, I won't start painting now.""",,
+3,indirectspeech,"Cindy asked her mom to take her to the movies. Her mom responds,",Cindy asked her mom to take her to the movies. ,"Her mom responds,"," ""Your little brother's toys are all over the house. I don't have time to clean up."" ",Her mom hopes Cindy might help her clean up the house.,Her mom thinks Cindy's brother creates a lot of mess. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Cindy asked her mom to take her to the movies. Her mom responds, ""Your little brother's toys are all over the house. I don't have time to clean up."" What might she be trying to convey?
+Options:
+1) Cindy's brother creates a lot of mess.
+2) Cindy might help her clean up the house.
+3) Cindy forgot to purchase a new toy for her brother.
+4) Cindy forgot to invite her brother to the movies.
+Answer: ",Her mother,Cindy,"{""'IncorrectLiteral'"": ""Cindy's brother creates a lot of mess."", ""'CorrectNonLiteral'"": 'Cindy might help her clean up the house.', ""'IncorrectLexicalOverlap'"": 'Cindy forgot to purchase a new toy for her brother.', ""'IncorrectAssociative'"": 'Cindy forgot to invite her brother to the movies.'}",Cindy,"""I hope you could lend me a hand in cleaning up the house.""","""Your brother creates such a mess, doesn't he?""","Yes, mom, he certainly does create a lot of mess.","""Sure mom, I will help you clean up the house before we go to the movies.""",,
+4,indirectspeech,"Matt was telling Cindy about a scary movie that he saw. Cindy was listening to him for a while and then responded, ",Matt was telling Cindy about a scary movie that he saw. Cindy was listening to him for a while. ,"Cindy then responded, ","""Oh, have you tried the new Italian place downtown? I heard their pasta is exceptional!""",Cindy wants to divert the conversation away from the scary movie topic.,She wonders whether Matt knows any other interesting stories.,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Matt was telling Cindy about a scary movie that he saw. Cindy was listening to him for a while and then responded, ""Can we talk about something else?"" What might she be trying to convey?
+Options:
+1) She wonders whether Matt knows something else interesting that he can share with her.
+2) She wishes to have a date with Matt.
+3) She wishes that he stopped telling her about the movie.
+4) She wishes to build a kite with Matt.
+Answer: ",Cindy,Matt,"{""'IncorrectLiteral'"": 'She wonders whether Matt knows something else interesting that he can share with her.', ""'IncorrectLexicalOverlap'"": 'She wishes to have a date with Matt.', ""'CorrectNonLiteral'"": 'She wishes that he stopped telling her about the movie.', ""'IncorrectAssociative'"": 'She wishes to build a kite with Matt.'}",she," ""Can we talk about something else?"" ","""Do you know any other interesting stories?""","""Yes, I do know other interesting stories.""","""Sure, Cindy, what topic would you like to discuss?""",,
+5,indirectspeech,"Cindy and Matt had been good friends for a long time. Recently Cindy started teasing Matt a lot every day. He got mad and said,",Cindy and Matt had been good friends for a long time. Recently Cindy started teasing Matt a lot every day. He got mad. ,"He said,"," ""My friends do not say hurtful things to me."" ",Cindy should stop teasing him if she wants to be his friend.,Matt wants to say his friends are very friendly. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Cindy and Matt had been good friends for a long time. Recently Cindy started teasing Matt a lot every day. He got mad and said, ""My friends do not say hurtful things to me."" What might he be trying to convey?
+Options:
+1) Cindy should stop teasing him if she wants to be his friend.
+2) His friends are very friendly.
+3) Cindy should meet Matt's other friends.
+4) Cindy should meet a new principal.  
+Answer: ",Matt,Cindy,"{""'CorrectNonLiteral'"": 'Cindy should stop teasing him if she wants to be his friend.', ""'IncorrectLiteral'"": 'His friends are very friendly.', ""'IncorrectLexicalOverlap'"": ""Cindy should meet Matt's other friends."", ""'IncorrectAssociative'"": 'Cindy should meet a new principal.  '}",Cindy,"""If you want to be my friend, you need to stop teasing me.""","""My friends are incredibly friendly.""","That's great to hear, Matt.","""Alright Matt, I understand and I will stop teasing you.""",,
+6,indirectspeech,The boys were playing around. Dan accidentally tripped Scott. Scott got very angry about falling. Dan said:,The boys were playing around. Dan accidentally tripped Scott. Scott got very angry about falling. ,Dan said:," ""Everybody's being wild."" ",Dan thinks it was not his fault.,Dan thinks all of the boys were not very cautious. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: The boys were playing around. Dan accidentally tripped Scott. Scott got very angry about falling. Dan said: ""Everybody's being wild."" What might he be trying to convey?
+Options:
+1) All of the boys were not very cautious.
+2) He likes to live in the city. 
+3) He likes to live in the wilderness.
+4) It was not his fault.
+Answer: ",Dan,Scott,"{""'IncorrectLiteral'"": 'All of the boys were not very cautious.', ""'IncorrectAssociative'"": 'He likes to live in the city. ', ""'IncorrectLexicalOverlap'"": 'He likes to live in the wilderness.', ""'CorrectNonLiteral'"": 'It was not his fault.'}",he,"""It wasn't my fault.""","""Scott, in my opinion, all of the boys lacked caution.""","I understand, Dan, you believe all the boys behaved recklessly.","""You should be more careful, Dan.""",,
+7,indirectspeech,"Kate brought some cookies to school. Matt has a sweet tooth. He says,",Kate brought some cookies to school. Matt has a sweet tooth. ,"He says,"," ""Your cookies smell delicious. They must be really tasty."" ",He wants Kate to give him some cookies.,He thinks Kate is a great baker who makes good cookies. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Kate brought some cookies to school. Matt has a sweet tooth. He says, ""Your cookies smell delicious. They must be really tasty."" What might he be trying to convey?
+Options:
+1) He wants to learn how to make a roast beef.
+2) She is a great baker who makes good cookies.
+3) He wants to learn how to make these cookies.
+4) He wants Kate to give him some cookies.
+Answer: ",Matt,Kate,"{""'IncorrectAssociative'"": 'He wants to learn how to make a roast beef.', ""'IncorrectLiteral'"": 'She is a great baker who makes good cookies.', ""'IncorrectLexicalOverlap'"": 'He wants to learn how to make these cookies.', ""'CorrectNonLiteral'"": 'He wants Kate to give him some cookies.'}",he,"""Could you please pass me some cookies?""","""You're a fantastic baker and you make wonderful cookies.""","""Thank you, I'm glad you enjoy my baking.""","""Sure, Matt, here are some cookies.""",,
+8,indirectspeech,"The teacher said that she was feeling sick today and asked the kids to work in groups quietly. Matt kept talking loudly with his friends. The teacher said,",The teacher said that she was feeling sick today and asked the kids to work in groups quietly. Matt kept talking loudly with his friends. ,"The teacher said,"," ""Matt, I think you are being unfair to me now."" ",She wants Matt to lower his voice.,She wants to tell Matt that he being is unfair to her. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: The teacher said that she was feeling sick today and asked the kids to work in groups quietly. Matt kept talking loudly with his friends. The teacher said, ""Matt, I think you are being unfair to me now."" What might she be trying to convey?
+Options:
+1) Matt is unfair to the teacher.
+2) She wants him to stop talking.
+3) She wants kids to work on a project about fairness.
+4) She wants kids to work on a project about dinosaurs.
+Answer: ",The teacher,Matt,"{""'IncorrectLiteral'"": 'Matt is unfair to the teacher.', ""'CorrectNonLiteral'"": 'She wants him to stop talking.', ""'IncorrectLexicalOverlap'"": 'She wants kids to work on a project about fairness.', ""'IncorrectAssociative'"": 'She wants kids to work on a project about dinosaurs.'}",she,"""Could you please lower your voice?""","""You are not treating me fairly.""","I apologize, I didn't realize my actions were unfair to you.","""Okay, I'll speak more quietly.""",,
+9,indirectspeech,"Cindy was having a slumber party with two of her friends. It was very late, but they kept talking and laughing. Her dad came in and said,","Cindy was having a slumber party with two of her friends. It was very late, but they kept talking and laughing. Her dad came in.","He said,","""I would like to go to bed."" ",He wants the girls to be quiet.,He wants to tell the girls that he wants to go to bed.,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Cindy was having a slumber party with two of her friends. It was very late, but they kept talking and laughing. Her dad came in and said, ""I would like to go to bed but it is too loud in here."" What might he be trying to convey?
+Options:
+1) He wants the girls to go shopping.
+2) He is too tired and the girls are making a lot of noise.
+3) He wants the girls to listen to some music.
+4) He wants the girls to be quiet.
+Answer: ",Her dad,Cindy,"{""'IncorrectAssociative'"": 'He wants the girls to go shopping.', ""'IncorrectLiteral'"": 'He is too tired and the girls are making a lot of noise.', ""'IncorrectLexicalOverlap'"": 'He wants the girls to listen to some music.', ""'CorrectNonLiteral'"": 'He wants the girls to be quiet.'}",he,"""I want you and the other girls to keep it down.""","""I'm really tired, girls. I think I'll head off to bed now.""","Okay, Dad. Good night!","""Okay, Dad, we will keep our voices down.""",,
+10,indirectspeech,"Chad and Matt were walking. The sidewalk was being fixed and there was lots of shattered glass on the sidewalk. Matt was not paying attention to the sidewalk. Chad said,",Chad and Matt were walking. The sidewalk was being fixed and there was lots of shattered glass on the sidewalk. Matt was not paying attention to the sidewalk. ,"Chad said,"," ""I guess you like walking on shattered glass."" ",Matt should look around where he is walking. ,Chad thinks walking on shattered glass is something that Matt enjoys. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Chad and Matt were walking. The sidewalk was being fixed and there was lots of shattered glass on the sidewalk. Matt was not paying attention to the sidewalk. Chad said, ""I guess you like walking on shattered glass."" What might he be trying to convey?
+Options:
+1) Matt should buy new shoes.
+2) Matt should look around where he is walking. 
+3) Walking on shattered glass is something that Matt enjoys.
+4) Matt should get a new pet.
+Answer: ",Chad,Matt,"{""'IncorrectLexicalOverlap'"": 'Matt should buy new shoes.', ""'CorrectNonLiteral'"": 'Matt should look around where he is walking. ', ""'IncorrectLiteral'"": 'Walking on shattered glass is something that Matt enjoys.', ""'IncorrectAssociative'"": 'Matt should get a new pet.'}",Matt,"""Hey, be mindful of your surroundings when you're walking.""","""Believe it or not, I think you have walking on shattered glass makes you very happy.""","Yes Chad, I find strange satisfaction in that.","""Okay Chad, I'll pay more attention to where I'm walking.""",,
+11,indirectspeech,Richard is driving his wife home from church. On the way home they want to stop at a new gourmet grocery store at 2401 Main Street. It is in a part of town that they are not familiar with. Richard points at a building and asks his wife:,Richard is driving his wife home from church. On the way home they want to stop at a new gourmet grocery store at 2401 Main Street. It is in a part of town that they are not familiar with. Richard points at a building. ,He asks his wife:," ""Can you see that house number?"" ",He needs his wife's help in confirming the house number.,He wants to know how good her vision is. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Richard is driving his wife home from church. On the way home they want to stop at a new gourmet grocery store at 2401 Main Street. It is in a part of town that they are not familiar with. Richard points at a building and asks his wife: ""Can you see that house number?"" What might he be trying to convey?
+Options:
+1) He wants her to see an eye doctor.
+2) He wants her to tell him the house number.
+3) He wants to know how good her vision is.
+4) He wants her to see a dentist.
+Answer: ",Richard,His wife,"{""'IncorrectLexicalOverlap'"": 'He wants her to see an eye doctor.', ""'CorrectNonLiteral'"": 'He wants her to tell him the house number.', ""'IncorrectLiteral'"": 'He wants to know how good her vision is.', ""'IncorrectAssociative'"": 'He wants her to see a dentist.'}",he,"""Can you please help me confirm our house number?""","""Do you have good vision, darling?""","""Yes, my vision is very clear, darling.""","""Our house number is 2401, Richard.""",,
+12,indirectspeech,"It has been a hot day. Juan's wife is leaving the house and says to him, ",It has been a hot day. Juan's wife is leaving the house.,"She says to him, ","""The lawn looks dry""",She wants to know whether he has time and a desire to water the lawn. ,She wants to make a comment on the dry look of the lawn.,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: It has been a hot day. Juan's wife is leaving the house and says to him, ""Can you water the lawn?'' What might he be trying to convey?
+Options:
+1) She wants to know whether he has time and a desire to water the lawn. 
+2) She wants to know whether he is allowed to water the lawn.
+3) She wants to know whether he won the golf tournament.
+4) She wants to know whether he will water the plants in the office.
+Answer: ",Juan,His wife,"{""'CorrectNonLiteral'"": 'She wants to know whether he has time and a desire to water the lawn. ', ""'IncorrectLiteral'"": 'She wants to know whether he is allowed to water the lawn.', ""'IncorrectAssociative'"": 'She wants to know whether he won the golf tournament.', ""'IncorrectLexicalOverlap'"": 'She wants to know whether he will water the plants in the office.'}",she,"""Do you have the time and interest to water the lawn?""","""Don't you think our lawn looks really dry""","""Yes, I also noticed that our lawn looks dry.""","""Yes, I have both the time and interest to water the lawn.""",,
+13,indirectspeech,A house painter is carrying a heavy tray of paints. A small ladder is blocking the sidewalk and the painter cannot get around it. He calls out to his brother:,A house painter is carrying a heavy tray of paints. A small ladder is blocking the sidewalk and the painter cannot get around it. He calls out to his brother.,"He says,"," ""Your ladder is in the way.""  ",He needs his brother to clear the path.,He wants tell his brother where the ladder is.,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: A house painter is carrying a heavy tray of paints. A small ladder is blocking the sidewalk and the painter cannot get around it. He calls out to his brother: ""Can you move the ladder?""  What might he be trying to convey?
+Options:
+1) He wants him to move the ladder.
+2) He wants him to bring brushes from the truck.
+3) He wants him to bring tires from the truck.
+4) He wants to know whether his brother is strong enough to move the ladder.
+Answer: ",his,His brother,"{""'CorrectNonLiteral'"": 'He wants him to move the ladder.', ""'IncorrectLexicalOverlap'"": 'He wants him to bring brushes from the truck.', ""'IncorrectAssociative'"": 'He wants him to bring tires from the truck.', ""'IncorrectLiteral'"": 'He wants to know whether his brother is strong enough to move the ladder.'}",he,"""Could you please clear the path for me?""","""I just wanted to let you know the ladder is on the sidewalk.""","""Thanks for informing me, I will retrieve it shortly.""","""Sure, I will move the ladder right away.""",,
+14,indirectspeech,Brad is interested in basketball and wants to join his school's basketball team. One day he comes to the basketball court and asks the players there:,Brad is interested in basketball and wants to join his school's basketball team. One day he comes to the basketball court.,He tells the players there:,"""You guys seem to be having fun. """,He wants to join their game.,He wants to tell the players that they look happy.,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Brad is interested in basketball and wants to join his school's basketball team. One day he comes to the basketball court and asks the players there: ""Do you think I can play basketball with you?"" What might he be trying to convey?
+Options:
+1) He wants to join their game.
+2) He wants to get a new uniform.
+3) He wants to know their opinion.
+4) He wants to get good grades on his math test.
+Answer: ",Brad,the players,"{""'CorrectNonLiteral'"": 'He wants to join their game.', ""'IncorrectLexicalOverlap'"": 'He wants to get a new uniform.', ""'IncorrectLiteral'"": 'He wants to know their opinion.', ""'IncorrectAssociative'"": 'He wants to get good grades on his math test.'}",he,"""I'd like to join your game if you don't mind.""","""You all seem to be really enjoying yourselves.""","""Yes, we are really enjoying ourselves.""","""Sure, you can join our game.""",,
+15,indirectspeech,Jane is watching TV while her mom is cooking dinner in the kitchen. The doorbell rings. Jane's mother says:,Jane is watching TV while her mom is cooking dinner in the kitchen. The doorbell rings., Jane's mother says:," ""Someone is at the door"". ",Jane's mother wants Jane to open the door.,Jane's mother suspects that someone is standing at their door. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Jane is watching TV while her mom is cooking dinner in the kitchen. The doorbell rings. Jane's mother says: ""Someone is at the door"". What might she be trying to convey?
+Options:
+1) She suspects that someone is standing at their door.
+2) She wants Jane to help her with cooking.
+3) She wants Jane to open the door.
+4) She wants Jane to help her with painting the house.
+Answer: ",Jane's mother,Jane,"{""'IncorrectLiteral'"": 'She suspects that someone is standing at their door.', ""'IncorrectLexicalOverlap'"": 'She wants Jane to help her with cooking.', ""'CorrectNonLiteral'"": 'She wants Jane to open the door.', ""'IncorrectAssociative'"": 'She wants Jane to help her with painting the house.'}",she,"""Jane, could you please open the door?""","""I suspect that someone is standing at our door, Jane.""","Yes, I think someone is at the door.","""Sure, I'll open the door.""",,
+16,indirectspeech,"Adam and Bill are working together on a project. Adam decides to take a break, and opens a window. A cold breeze blows in. Bill says, ","Adam and Bill are working together on a project. Adam decides to take a break, and opens a window. A cold breeze blows in. ","Bill says, ","""I am getting cold."" ",He wants Adam to close the window.,He wants to tell Adam that he is shivering. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Adam and Bill are working together on a project. Adam decides to take a break, and opens a window. A cold breeze blows in. Bill says, ""I am getting cold."" What might he be trying to convey?
+Options:
+1) He wants Adam to get back to the project.
+2) He wants to describe his physical state to Adam.
+3) He wants Adam to invite Julie to the movies.
+4) He wants Adam to close the window.
+Answer: ",Bill,Adam,"{""'IncorrectLexicalOverlap'"": 'He wants Adam to get back to the project.', ""'IncorrectLiteral'"": 'He wants to describe his physical state to Adam.', ""'IncorrectAssociative'"": 'He wants Adam to invite Julie to the movies.', ""'CorrectNonLiteral'"": 'He wants Adam to close the window.'}",he,"""Could you please close the window?""","""I'm shivering.""","""I am shivering too, Bill""","""Sure, I'll close the window.""",,
+17,indirectspeech,"Mark invited Josh to his house to watch a football game. Josh brings a six-pack of beer with him. Josh picks up one bottle, examines it and then says to Mark:","Mark invited Josh to his house to watch a football game. Josh brings a six-pack of beer with him. Josh picks up one bottle, examines it. ",He then says to Mark:," ""Hmm, this isn't a twist off."" ",He wants Mark to get a bottle opener.,He is upset that they will not be able to drink beer. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Mark invited Josh to his house to watch a football game. Josh brings a six-pack of beer with him. Josh picks up one bottle, examines it and then says to Mark: ""Hmm, this isn't a twist off."" What might he be trying to convey?
+Options:
+1) He wants Mark to bring some pancakes.
+2) He wants Mark to bring some wine.
+3) He is upset that they will not be able to drink beer.
+4) He wants Mark to get a bottle opener.
+Answer: ",Josh,Mark,"{""'IncorrectAssociative'"": 'He wants Mark to bring some pancakes.', ""'IncorrectLexicalOverlap'"": 'He wants Mark to bring some wine.', ""'IncorrectLiteral'"": 'He is upset that they will not be able to drink beer.', ""'CorrectNonLiteral'"": 'He wants Mark to get a bottle opener.'}",he,"""Could you please grab a bottle opener?""","""I'm really upset, Mark. It doesn't look like we'll be able to drink beer.""","That's unfortunate, Josh. I was looking forward to having a beer.","""Sure, I will get a bottle opener.""",,
+18,indirectspeech,"Natalie returns home to find that her partner, Alex, created a big mess on the table. Natalie says:","Natalie returns home to find that her partner, Alex, created a big mess on the table. ",Natalie says:," ""Alex, my parents are going to be here any minute"" ",She wants Alex to clean the mess.,She wants to inform Alex of when her parents will arrive. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Natalie returns home to find that her partner, Alex, created a big mess on the table. Natalie says: ""Alex, my parents are going to be here any minute"" What might she be trying to convey?
+Options:
+1) She wants Alex to clean the mess.
+2) She wants Alex to know when her parents will arrive.
+3) She wants Alex to apply for a job.
+4) She wants Alex to prepare some dinner.
+Answer: ",Natalie,Alex,"{""'CorrectNonLiteral'"": 'She wants Alex to clean the mess.', ""'IncorrectLiteral'"": 'She wants Alex to know when her parents will arrive.', ""'IncorrectAssociative'"": 'She wants Alex to apply for a job.', ""'IncorrectLexicalOverlap'"": 'She wants Alex to prepare some dinner.'}",she,"""Could you please clean up this mess?""","""My parents are coming to town soon, Alex, just wanted to keep you in the loop.""","Thanks for letting me know, Natalie.","""Sure, I'll clean it up right away.""",,
+19,indirectspeech,Nate is about to leave the house. His wife points at a full bag of garbage and asks:,Nate is about to leave the house. His wife points at a full bag of garbage. , She asks:," ""Are you going out?"" ",She wants Nate to take the garbage out.,She wants to know Nate's plans. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Nate is about to leave the house. His wife points at a full bag of garbage and asks: ""Are you going out?"" What might she be trying to convey?
+Options:
+1) She wants to know Nate's plans.
+2) She wants Nate to take the garbage out.
+3) She wants Nate to bring his friends over. 
+4) She wants Nate to spend more time with the family.
+Answer: ",His wife,Nate,"{""'IncorrectLiteral'"": ""She wants to know Nate's plans."", ""'CorrectNonLiteral'"": 'She wants Nate to take the garbage out.', ""'IncorrectAssociative'"": 'She wants Nate to bring his friends over. ', ""'IncorrectLexicalOverlap'"": 'She wants Nate to spend more time with the family.'}",she,"""Nate, could you please take the garbage out?""","""What are your plans, Nate?""","""I plan to finish my work report and then take a walk in the park.""","""Sure, I will take the garbage out now.""",,
+20,indirectspeech,"Sam is sunning himself on the porch. Peter comes out of the house and forgets to close the screen door. Sam says, ",Sam is sunning himself on the porch. Peter comes out of the house and forgets to close the screen door. ,"Sam says, ","""Peter, there are many flies and mosquitoes outside."" ",He wants Peter to close the screen door.,He wants to tell Peter about the increase of bugs.,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Sam is sunning himself on the porch. Peter comes out of the house and forgets to close the screen door. Sam says, ""Peter, there are many flies and mosquitoes outside."" What might he be trying to convey?
+Options:
+1) He wants Peter to bring him some flowers.
+2) He wants Peter to close the screen door.
+3) He wants Peter to know that he might get bitten.
+4) He wants Peter to bring him some sunscreen.
+Answer: ",Sam ,Peter,"{""'IncorrectAssociative'"": 'He wants Peter to bring him some flowers.', ""'CorrectNonLiteral'"": 'He wants Peter to close the screen door.', ""'IncorrectLiteral'"": 'He wants Peter to know that he might get bitten.', ""'IncorrectLexicalOverlap'"": 'He wants Peter to bring him some sunscreen.'}",he,"""Could you please close the screen door?""","""Hey, I thought I should let you know that there's been an increase in bugs lately.""","""Thanks for letting me know about the bug increase, Sam.""","""Sure, I will close the screen door right away.""",,
+1,irony,"In a shop, Lara tries on a dress. The dress is far too long for her. Lara asks Simon: ""Does this dress fit me?"" Simon answers:","In a shop, Lara tries on a dress. The dress is far too long for her. Lara asks Simon: ""Does this dress fit me?""", Simon answers:,"You could surely step straight into a fashion show, the way it sweeps the floor! ",Lara needs to get a dress of a shorter length.,Simon thinks the dress is fitting well. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: In a shop, Lara tries on a dress. The dress is far too long for her. Lara asks Simon: ""Does this dress fit me?"" Simon answers: ""Wow! That must be custom made! It's clearly the perfect size and length for you."" What did Simon want to convey? 
+Options:
+1) Simon does not like the color of this dress.
+2) Simon has to get back to work.
+3) The dress is fitting well.
+4) Lara needs to get a dress of a shorter length.
+Answer: ",Simon,Lara,"{""'IncorrectAssociate'"": 'Simon does not like the color of this dress.', ""'IncorrectNonSequitur'"": 'Simon has to get back to work.', ""'IncorrectLiteral'"": 'The dress is fitting well.', ""'CorrectNonLiteral'"": 'Lara needs to get a dress of a shorter length.'}",Lara,"""You need to find a dress that's a bit shorter in length.""","""The dress fits you well.""","""Thank you, Simon, I appreciate your feedback on the fit of this dress.""","""So, this dress is too long for me, right?""",,
+2,irony,"Christian is Shane's big brother. One day, Christian is helping Shane with his homework. Christian explains the homework to Shane. When Shane starts the assignment, he does not follow Christian's instructions. Christian says, ","Christian is Shane's big brother. One day, Christian is helping Shane with his homework. Christian explains the homework to Shane. When Shane starts the assignment, he does not follow Christian's instructions. ","Christian says, ","""You are such a wonderful listener."" ",Shane was not paying attention when Christian was talking.,Shane was paying attention when Christian was talking. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Christian is Shane's big brother. One day, Christian is helping Shane with his homework. Christian explains the homework to Shane. When Shane starts the assignment, he does not follow Christian's instructions. Christian says, ""You are such a wonderful listener."" What did Christian want to convey?
+Options:
+1) Shane was not paying attention when Christian was talking.
+2) Shane was paying attention when Christian was talking.
+3) Shane needs to see an eye doctor.
+4) Shane's hearing improved greatly.
+Answer: ",Christian,Shane,"{""'CorrectNonLiteral'"": 'Shane was not paying attention when Christian was talking.', ""'IncorrectLiteral'"": 'Shane was paying attention when Christian was talking.', ""'IncorrectNonSequitur'"": 'Shane needs to see an eye doctor.', ""'IncorrectAssociate'"": ""Shane's hearing improved greatly.""}",Shane,"""You weren't really paying attention when I was talking, were you?""","""I noticed you were really paying attention when I was talking.""","Yes, Christian, I was indeed concentrating on what you were saying.","""No, I wasn't really paying attention when you were talking.""",,
+3,irony,"Andrew and Phil are good friends, but they play on different basketball teams. During one game, Phil tries to score a basket but Andrew blocks his shot. Andrew says, ","Andrew and Phil are good friends, but they play on different basketball teams. During one game, Phil tries to score a basket but Andrew blocks his shot. ","Andrew says, ","""You are so good at this."" ",Phil's basketball skills could be better.,Andrew wants to say Phil is a great basketball player. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Andrew and Phil are good friends, but they play on different basketball teams. During one game, Phil tries to score a basket but Andrew blocks his shot. Andrew says, ""You are so good at this."" What did Andrew want to convey? 
+Options:
+1) Phil's basketball skills could be better.
+2) Phil is a great student.
+3) Phil is a great basketball player.
+4) Phil's blocking is impressive.
+Answer: ",Andrew,Phil,"{""'CorrectNonLiteral'"": ""Phil's basketball skills could be better."", ""'IncorrectNonSequitur'"": 'Phil is a great student.', ""'IncorrectLiteral'"": 'Phil is a great basketball player.', ""'IncorrectAssociate'"": ""Phil's blocking is impressive.""}",he,"""You could certainly improve on your basketball skills.""","""You're truly a phenomenal basketball player.""","""Thank you for your compliment, Andrew.""","""Yes, Andrew, I will continue to work on my skills.""",,
+4,irony,"Patrick and Jon like to eat at restaurants. One afternoon, they are at a restaurant eating lunch. Patrick orders a bowl of noodles and Jon orders a rice dish. While eating his meal, Patrick spills some noodles on his shirt. Jon says, ","Patrick and Jon like to eat at restaurants. One afternoon, they are at a restaurant eating lunch. Patrick orders a bowl of noodles and Jon orders a rice dish. While eating his meal, Patrick spills some noodles on his shirt. ","Jon says, ","""You are so graceful."" ",Jon wants to tell Patrick that he is careless.,Jon thinks Patrick is very cautious. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Patrick and Jon like to eat at restaurants. One afternoon, they are at a restaurant eating lunch. Patrick orders a bowl of noodles and Jon orders a rice dish. While eating his meal, Patrick spills some noodles on his shirt. Jon says, ""You are so graceful."" What did Jon want to convey?
+Options:
+1) Patrick is allergic to noodles.
+2) Patrick is careless.
+3) Patrick pays a lot of attention to fashion.
+4) Patrick is very cautious.
+Answer: ",Jon,Patrick,"{""'IncorrectAssociate'"": 'Patrick is allergic to noodles.', ""'CorrectNonLiteral'"": 'Patrick is careless.', ""'IncorrectNonSequitur'"": 'Patrick pays a lot of attention to fashion.', ""'IncorrectLiteral'"": 'Patrick is very cautious.'}",Patrick,"""You really need to be more mindful, you've been acting quite careless lately.""","""Patrick, you are very cautious.""","""Yes, Jon, I tend to be cautious in my approach.""","I'm sorry, I didn't realise I was being careless, I'll be more mindful in the future.",,
+5,irony,"Today Sarah and Tom are going to the beach to go swimming and sunbathing. It was Tom's idea, as he said it was going to be a lovely sunny day to go to the beach. But just as they arrive at the beach, it starts to rain and thunder. Sarah becomes angry. She says ","Today Sarah and Tom are going to the beach to go swimming and sunbathing. It was Tom's idea, as he said it was going to be a lovely sunny day to go to the beach. But just as they arrive at the beach, it starts to rain and thunder. Sarah becomes angry. ",She says ,"""Oh yes, a lovely day for going to the beach."" ",Tom's idea to go to the beach was awful.,Tom's idea to go to the beach was genius.  ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Today Sarah and Tom are going to the beach to go swimming and sunbathing. It was Tom's idea, as he said it was going to be a lovely sunny day to go to the beach. But just as they arrive at the beach, it starts to rain and thunder. Sarah becomes angry. She says ""Oh yes, a lovely day for going to the beach."" What did Sarah want to convey?
+Options:
+1) Tom forgot his sunscreen.
+2) Tom's idea to go to the beach was awful.
+3) Tom's idea to go to the beach was genius. 
+4) Tom forgot his passport.
+Answer: ",Sarah,Tom,"{""'IncorrectAssociate'"": 'Tom forgot his sunscreen.', ""'CorrectNonLiteral'"": ""Tom's idea to go to the beach was awful."", ""'IncorrectLiteral'"": ""Tom's idea to go to the beach was genius. "", ""'IncorrectNonSequitur'"": 'Tom forgot his passport.'}",she,"""Your idea of going to the beach was really awful, Tom.""","""Your idea to go to the beach was very good!.""","I'm glad you enjoyed the beach, Sarah.","""I'm sorry Sarah, I didn't predict the weather would change.""",,
+6,irony,It is a holiday. Stefan and Kim are sitting in the backseat of the car. They are fighting all the time. Their father says:,It is a holiday. Stefan and Kim are sitting in the backseat of the car with their father. They are fighting all the time. ,Their father says:," ""Oh, it is so pleasant here."" ",He does not want to listen to his kids' arguments.,He enjoys listening to his kids fighting. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: It is a holiday. Stefan and Kim are sitting in the backseat of the car. They are fighting all the time. Their father says: ""Oh, it is so pleasant here."" What did the father want to convey?
+Options:
+1) AC gives them some needed cool.
+2) He does not want to listen to his kids' arguments.
+3) He remembers about his wife's birthday.
+4) He enjoys listening to his kids fighting.
+Answer: ",The father,Stephan,"{""'IncorrectAssociate'"": 'AC gives them some needed cool.', ""'CorrectNonLiteral'"": ""He does not want to listen to his kids' arguments."", ""'IncorrectNonSequitur'"": ""He remembers about his wife's birthday."", ""'IncorrectLiteral'"": 'He enjoys listening to his kids fighting.'}",he,"""I'm tired of listening to you kids' constant arguing. I just can't listen to them anymore.""","""Its actually quite wholesome hearing you children have healthy debates, Stephan.""","Thanks, Dad, I'm glad you appreciate our lively discussions.","""Okay, dad, Kim and I will stop arguing.""",,
+7,irony,"Kim and Jane are leaving the football stadium. Jane says, ""What a wonderful game."" Kim looks disappointed. Kim replies:","Kim and Jane are leaving the football stadium. Jane says, ""What a wonderful game."" Kim looks disappointed. ",Kim replies:,"""Oh yeah, absolute highlight of my year. """,The game was a disaster.,The game was outstanding. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Kim and Jane are leaving the football stadium. Jane says, ""What a wonderful game."" Kim looks disappointed. Kim replies: ""Sorry I made you come."" What did Jane want to convey?
+Options:
+1) The game of chess was over.    
+2) The game ended too late.
+3) The game was outstanding.
+4) The game was a disaster.
+Answer: ",Kim,Jane,"{""'IncorrectNonSequitur'"": 'The game of chess was over.    ', ""'IncorrectAssociate'"": 'The game ended too late.', ""'IncorrectLiteral'"": 'The game was outstanding.', ""'CorrectNonLiteral'"": 'The game was a disaster.'}",she,"""That game was an absolute catastrophe, don't you agree?""","""Yeah! It was absolutely outstanding!""","I agree, Kim, the game was indeed outstanding.","""No, I thought it was great.""",,
+8,irony,"Mark entered a golf tournament where he played badly and kept missing very easy shots. His friend Hal watched the tournament and afterwards he said to Mark,",Mark entered a golf tournament where he played badly and kept missing very easy shots. His friend Hal watched the tournament. ,"He afterwards he said to Mark,"," ""You sure are a good golfer."" ",Hal thinks Mark isn't a good player.,Hal thinks Mark is an exceptional player. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Mark entered a golf tournament where he played badly and kept missing very easy shots. His friend Hal watched the tournament and afterwards he said to Mark, ""You sure are a good golfer."" What did Hal want to convey?
+Options:
+1) Mark forgot to thank his dentist.  
+2) Mark is an exceptional player.
+3) Mark isn't a good player.
+4) Mark forgot to thank his caddy.
+Answer: ",Hal,Mark,"{""'IncorrectNonSequitur'"": 'Mark forgot to thank his dentist.  ', ""'IncorrectLiteral'"": 'Mark is an exceptional player.', ""'CorrectNonLiteral'"": ""Mark isn't a good player."", ""'IncorrectAssociate'"": 'Mark forgot to thank his caddy.'}",he,"""I don't think you're a good player.""","""Mark, I genuinely believe you're an exceptional player.""","Thank you, Hal, for your belief in my abilities.","""I appreciate your opinion, Hal, and will work on improving my game.""",,
+9,irony,"Adrian's mother asks if he can look in his brother Tom's room to check if he has tidied up. Adrian opens the door to Tom's room, peers in, and sees that the room appears as it normally does - cluttered with toys and dirty clothes. He shouts to his mother:","Adrian's mother asks if he can look in his brother Tom's room to check if he has tidied up. Adrian opens the door to Tom's room, peers in, and sees that the room appears as it normally does - cluttered with toys and dirty clothes. ",He shouts to his mother:," ""Mother, Tom, as usual, has done a splendid job tidying up!"" ",Tom's room is still messy.,Adrian sees that Tom tidied up his room. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Adrian's mother asks if he can look in his brother Tom's room to check if he has tidied up. Adrian opens the door to Tom's room, peers in, and sees that the room appears as it normally does - cluttered with toys and dirty clothes. He shouts to his mother: ""Mother, Tom, as usual, has done a splendid job tidying up!"" What did Adrian want to convey?
+Options:
+1) Tom cannot find a lawyer. 
+2) Tom cannot find a vacuum.
+3) Tom's room is still messy.
+4) Tom tidied up his room.
+Answer: ",Adrian,His mother,"{""'IncorrectNonSequitur'"": 'Tom cannot find a lawyer. ', ""'IncorrectAssociate'"": 'Tom cannot find a vacuum.', ""'CorrectNonLiteral'"": ""Tom's room is still messy."", ""'IncorrectLiteral'"": 'Tom tidied up his room.'}",he,"""Mom, my room is still a mess!""","""Mom, Tom cleaned up his room!""","That's good, I'm glad to hear Tom is keeping his room tidy.","""Adrian, please tell your brother to clean his room.""",,
+10,irony,"Callie promised to bring a salad to Jason's dinner party. She arrived two hours late. Jason said,",Callie promised to bring a salad to Jason's dinner party. She arrived two hours late. ,"Jason said,"," ""I'm so glad that you were able to fit us into your busy schedule."" ",He is annoyed that Callie showed up late.,He is happy that Callie made it to the party. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Callie promised to bring a salad to Jason's dinner party. She arrived two hours late. Jason said, ""I'm so glad that you were able to fit us into your busy schedule."" What did Jason want to convey?
+Options:
+1) He is tired and is going to bed.
+2) He is happy that Callie made it to the party.
+3) He is annoyed that Callie showed up late.
+4) He is hungry and wants to eat Callie's salad.
+Answer: ",Jason,Callie,"{""'IncorrectNonSequitur'"": 'He is tired and is going to bed.', ""'IncorrectLiteral'"": 'He is happy that Callie made it to the party.', ""'CorrectNonLiteral'"": 'He is annoyed that Callie showed up late.', ""'IncorrectAssociate'"": ""He is hungry and wants to eat Callie's salad.""}",he,"""I'm annoyed that you showed up late.""","""I'm so happy to see you here! Welcome to the party.""""","""Thank you, Jason, I am glad to be here.""","""I'm sorry, Jason, I didn't mean to arrive late.""",,
+11,irony,"John is a teacher at an elementary school. When talking with the principal about a new student, who did poorly on her entrance examination, John said,","John is a teacher at an elementary school. When talking with the principal about a new student, who did poorly on her entrance examination, ","John said, ","""This one is really sharp."" ",The student is not very clever.,Jon thinks the student is smart. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: John is a teacher at an elementary school. When talking with the principal about a new student, who did poorly on her entrance examination, John said, ""This one is really sharp."" What did John want to convey?
+Options:
+1) The pencils need to be sharpened.
+2) The student is smart.
+3) The entrance exam is unfair. 
+4) The student is not very clever.
+Answer: ",John,The principal,"{""'IncorrectNonSequitur'"": 'The pencils need to be sharpened.', ""'IncorrectLiteral'"": 'The student is smart.', ""'IncorrectAssociate'"": 'The entrance exam is unfair. ', ""'CorrectNonLiteral'"": 'The student is not very clever.'}",he,"""This student doesn't seem to be very insightful.""","""I believe the student is quite smart.""","""I agree with your assessment, John, the student is indeed intelligent.""",We should provide additional support to enhance the student's understanding.,,
+12,irony,"Melissa's friend convinces her to accompany her to a nightclub that her friend says is ""super hot"". When they arrive, it is so cold inside that they can see their breath. Melissa turns to her friend and says, ","Melissa's friend convinces her to accompany her to a nightclub that her friend says is ""super hot"". When they arrive, it is so cold inside that they can see their breath. ","Melissa turns to her friend and says, ","""The heat is really on in here.""",It is too cold.,Melissa thinks it is too hot. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Melissa's friend convinces her to accompany her to a nightclub that her friend says is ""super hot"". When they arrive, it is so cold inside that they can see their breath. Melissa turns to her friend and says, ""The heat is really on in here."" What did Melissa want to convey?
+Options:
+1) It is too loud.
+2) It is too bright. 
+3) It is too hot.
+4) It is too cold.
+Answer: ",Melissa,Her friend,"{""'IncorrectNonSequitur'"": 'It is too loud.', ""'IncorrectAssociate'"": 'It is too bright. ', ""'IncorrectLiteral'"": 'It is too hot.', ""'CorrectNonLiteral'"": 'It is too cold.'}",she,"""The temperature is just unbearably low, don't you think?""","""I run a little hot, so It's just too hot for me.""","I understand, everyone has different comfort levels with temperature.","Yes, it is colder than I expected.",,
+13,irony,"Your friend is working on his novel and is not making any progress. When you ask him how it is going he says, ",Your friend is working on his novel and is not making any progress.  You ask him how it is going.,"He says, ","""It couldn't be any better.""  ",He is unhappy with his work.,He is happy with his work. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Your friend is working on his novel and is not making any progress. When you ask him how it is going he says, ""It couldn't be any better.""  What does your friend want to convey?
+Options:
+1) He needs to polish his style.
+2) He is unhappy with his work.
+3) He needs to buy a new car.
+4) He is happy with his work.
+Answer: ",friend,You,"{""'IncorrectAssociate'"": 'He needs to polish his style.', ""'CorrectNonLiteral'"": 'He is unhappy with his work.', ""'IncorrectNonSequitur'"": 'He needs to buy a new car.', ""'IncorrectLiteral'"": 'He is happy with his work.'}",he,"""I'm not happy with my work.""","""I'm happy with my work.""",That's great to hear!,"I'm sorry to hear that, would you like to discuss what's going wrong?",,
+14,irony,"Tom, who is who is a gourmet chef, was offered a job at a new restaurant. Tom's potential employer offered him really low pay and no benefits. When you ask Tom what he thinks of the offer he says,","Tom, who is who is a gourmet chef, was offered a job at a new restaurant. Tom's potential employer offered him really low pay and no benefits. You ask Tom what he thinks of the offer.","He says,"," ""Well, their generosity knows no bounds."" ",He is disappointed with the job offer. ,Tom is very excited about the job offer. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Tom, who is who is a gourmet chef, was offered a job at a new restaurant. Tom's potential employer offered him really low pay and no benefits. When you ask Tom what he thinks of the offer he says, ""Well, their generosity knows no bounds."" What does Tom want to convey?
+Options:
+1) He is glad to be employed
+2) He is tired of jogging every morning.
+3) He is excited about the job offer.
+4) He is disappointed with the job offer. 
+Answer: ",Tom,You,"{""'IncorrectAssociate'"": 'He is glad to be employed', ""'IncorrectNonSequitur'"": 'He is tired of jogging every morning.', ""'IncorrectLiteral'"": 'He is excited about the job offer.', ""'CorrectNonLiteral'"": 'He is disappointed with the job offer. '}",he,"""I'm very upset about their job offer.""","""I'm weirdly satisfied with their offer and quite excited about it"".","That's great to hear, Tom, it sounds like you're really pleased with the job offer.","I'm sorry to hear that you're disappointed with the job offer, Tom.",,
+15,irony,"Megan and Kristine were looking after the neighbor's children one afternoon. The kids were energetic, enthusiastic, and well behaved. On the way home, Kristine said,","Megan and Kristine were looking after the neighbor's children one afternoon. The kids were energetic, enthusiastic, and well behaved. ","On the way home, Kristine said,"," ""Those kids were not fun at all."" ",Babysitting was an enjoyable experience.,Kristine thinks the babysitting was an unpleasant experience. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Megan and Kristine were looking after the neighbor's children one afternoon. The kids were energetic, enthusiastic, and well behaved. On the way home, Kristine said, ""Those kids were not fun at all."" What does Kristine want to convey?
+Options:
+1) Babysitting was an unpleasant experience.
+2) Babysitting was an enjoyable experience.
+3) Babysitting does not pay well.
+4) Rock music should be prohibited. 
+Answer: ",Kristine,Megan,"{""'IncorrectLiteral'"": 'Babysitting was an unpleasant experience.', ""'CorrectNonLiteral'"": 'Babysitting was an enjoyable experience.', ""'IncorrectAssociate'"": 'Babysitting does not pay well.', ""'IncorrectNonSequitur'"": 'Rock music should be prohibited. '}",she,"""I really had a great time babysitting, Megan. It was quite an enjoyable experience.""","""I really found that babysitting experience rather uncomfortable, to be honest.""","I understand, Kristine, babysitting isn't for everyone.","""I'm glad you enjoyed it, Kristine, I did too.""",,
+16,irony,"Laura and Lynn were having coffee at a local caf&eacute;. They were talking about a boring date that Laura had had the night before. They had watched old reruns of cartoons all evening. Lynn said, ",Laura and Lynn were having coffee at a local caf&eacute;. They were talking about a boring date that Laura had had the night before. They had watched old reruns of cartoons all evening. ,"Lynn said, ","""That sounds so exciting.""  ",Lynn thinks Laura had a dull experience.,Lynn thinks that is a thrilling experience for Laura. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Laura and Lynn were having coffee at a local caf&eacute;. They were talking about a boring date that Laura had had the night before. They had watched old reruns of cartoons all evening. Lynn said, ""That sounds so exciting.""  What did Lynn want to convey?
+Options:
+1) Laura had a thrilling experience.
+2) Laura had a dull experience.
+3) Laura needs a babysitter.
+4) Laura got food poisoning.
+Answer: ",Lynn,Laura,"{""'IncorrectLiteral'"": 'Laura had a thrilling experience.', ""'CorrectNonLiteral'"": 'Laura had a dull experience.', ""'IncorrectAssociate'"": 'Laura needs a babysitter.', ""'IncorrectAssociate2'"": 'Laura got food poisoning.'}",Laura,"""Laura, your experience was rather uninteresting.""","""ThatÕs still a very thrilling experience for you!""","Yes, it absolutely is a thrilling experience for me.","""Yes, Lynn, it was indeed a dull evening.""",,
+17,irony,"While Tom and a new acquaintance from work, Sara, were chatting at a party, they noticed a colleague across the room. She was standing alone holding a drink and a CD. Tom points at the girl and comments:","While Tom and a new acquaintance from work, Sara, were chatting at a party, they noticed a colleague across the room. She was standing alone holding a drink and a CD. Tom points at the girl. ",He comments:,"  ""The life of the party, right there."" ",Their colleague is quite unsociable.,Their colleague is very sociable. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: While Tom and a new acquaintance from work, Sara, were chatting at a party, they noticed a colleague across the room. She was standing alone holding a drink and a CD. Tom points at the girl and comments:  ""The life of the party, right there."" What did Tom want to convey?
+Options:
+1) Their colleague has good taste in fashion.
+2) Their colleague is quite unsociable.
+3) Their colleague is very sociable.
+4) Their colleague has good taste in music.
+Answer: ",Tom,Sara,"{""'IncorrectNonSequitur'"": 'Their colleague has good taste in fashion.', ""'CorrectNonLiteral'"": 'Their colleague is quite unsociable.', ""'IncorrectLiteral'"": 'Their colleague is very sociable.', ""'IncorrectAssociate'"": 'Their colleague has good taste in music.'}",he,"""You've noticed, haven't you? Our colleague doesn't seem to be very sociable.""","""You know, our colleague is quite the sociable type.""","Yes, he certainly enjoys engaging with others.","Yes, Tom, she does appear to be keeping to herself.",,
+18,irony,"Jane and her best friend, Arthur, were selling chocolates door to door to raise money for a charity event. Jane and Arthur approached a house and tried to sell their candy to a mean couple. As they walked away, Jane comments:","Jane and her best friend, Arthur, were selling chocolates door to door to raise money for a charity event. Jane and Arthur approached a house and tried to sell their candy to a mean couple. ","As they walked away, Jane comments:"," ""People in this community are so nice!""  ",Jane thinks it is an unfriendly community.,Jane thinks it is an amicable community. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Jane and her best friend, Arthur, were selling chocolates door to door to raise money for a charity event. Jane and Arthur approached a house and tried to sell their candy to a mean couple. As they walked away, Jane comments: ""People in this community are so nice!""  What did Jane want to convey?
+Options:
+1) It is a community of chocolate lovers.
+2) It is a community of animal lovers.
+3) It is an amicable community.
+4) It is an unfriendly community.
+Answer: ",Jne,Arthur,"{""'IncorrectAssociate'"": 'It is a community of chocolate lovers.', ""'IncorrectNonSequitur'"": 'It is a community of animal lovers.', ""'IncorrectLiteral'"": 'It is an amicable community.', ""'CorrectNonLiteral'"": 'It is an unfriendly community.'}",she,"""I get the feeling that this community isn't very welcoming.""","""I really believe this community is quite friendly, don't you agree?""","Yes, Jane, I also find this community to be very friendly.","""I agree, Jane, they weren't exactly friendly to us.""",,
+19,irony,"Penny, Juanita, and Jill have tickets to a basketball game. At halftime, Juanita offers to go get some drinks. Forty minutes later, she finally returns. Jill remarks, ","Penny, Juanita, and Jill have tickets to a basketball game. At halftime, Juanita offers to go get some drinks. Forty minutes later, she finally returns. ","Jill remarks, ","""That was quick."" ",Juanita is always so slow.,Jill thinks Juanita is always so fast. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Penny, Juanita, and Jill have tickets to a basketball game. At halftime, Juanita offers to go get some drinks. Forty minutes later, she finally returns, and Jill remarks, ""That was quick."" What did Jill want to convey?
+Options:
+1) Juanita is always so slow.
+2) Juanita has the view of the game.
+3) Juanita has the best cat.  
+4) Juanita is always so fast.
+Answer: ",Jill,Juanita,"{""'CorrectNonLiteral'"": 'Juanita is always so slow.', ""'IncorrectAssociate'"": 'Juanita has the view of the game.', ""'IncorrectNonSequitur'"": 'Juanita has the best cat.  ', ""'IncorrectLiteral'"": 'Juanita is always so fast.'}",Juanita,"""You're always taking so much time.""","""You're always so quick!""","""Thank you, Jill, I always try to be efficient.""",I apologize for taking so long.,,
+20,irony,"Mark gave his former colleague Krista tickets to a lecture where he was a guest speaker. Within the first 20 minutes of the lecture, the audience started to leave. The next day Krista talked to Mary about the lecture. Krista said:","Mark gave his former colleague Krista tickets to a lecture where he was a guest speaker. Within the first 20 minutes of the lecture, the audience started to leave. The next day Krista talked to Mary about the lecture. ",Krista said:," "" Oh, Mark held the audience's attention so well."" ",Mark's speaking skills leave much to be desired.,Krista thinks Mark is a great speaker. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Mark gave his former colleague Krista tickets to a lecture where he was a guest speaker. Within the first 20 minutes of the lecture, the audience started to leave. The next day Krista talked to Mary about the lecture. Krista said: "" Oh, Mark held the audience's attention so well."" What did Krista want to convey?
+Options:
+1) Mark's speech was on captivating topic.
+2) Mark's speech was about ants.  
+3) Mark's speaking skills leave much to be desired.
+4) Mark is a great speaker.
+Answer: ",Krista,Mark,"{""'IncorrectAssociate'"": ""Mark's speech was on captivating topic."", ""'IncorrectNonSequitur'"": ""Mark's speech was about ants.  "", ""'CorrectNonLiteral'"": ""Mark's speaking skills leave much to be desired."", ""'IncorrectLiteral'"": 'Mark is a great speaker.'}",she,"""Your speaking skills need some improvement.""","""I think you're a great speaker.""","""Thank you, Krista, for your kind words.""","Thank you for the feedback, Krista, I'll work on improving my speaking skills.",,
+21,irony,Tracy was in a dance recital and invited her roommate Steve to watch. Tracy tripped many times during her performance. The next day Steve was talking to Dawn about the recital. Steve said:,Tracy was in a dance recital and invited her roommate Steve to watch. Tracy tripped many times during her performance. The next day Steve was talking to Dawn about the recital. ,Steve said:," ""Some people have such natural grace!"" ",Steve thinks Tracy is not a good dancer.,Steve thinks Tracy is a great dancer. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Tracy was in a dance recital and invited her roommate Steve to watch. Tracy tripped many times during her performance. The next day Steve was talking to Dawn about the recital. Steve said: ""Some people have such natural grace!"" What did Steve want to convey?
+Options:
+1) Tracy's math skills are impressive.  
+2) Tracy is a great dancer.
+3) Tracy's dancing outfit is impressive.
+4) Tracy is not a good dancer.
+Answer: ",Steve,Dawn,"{""'IncorrectNonSequitur'"": ""Tracy's math skills are impressive.  "", ""'IncorrectLiteral'"": 'Tracy is a great dancer.', ""'IncorrectAssociate'"": ""Tracy's dancing outfit is impressive."", ""'CorrectNonLiteral'"": 'Tracy is not a good dancer.'}",Tracy,"""I don't think Tracy a good dancer.""","""I think Stacy is a great dancer, really.""",Stacy is indeed a great dancer.,"Steve, you should support Tracy since she is your friend and roommate.",,
+22,irony,"John finished the race way ahead of the other competitors. His friend laughed and said to him,",John finished the race way ahead of the other competitors. ,"His friend laughed and said to him,"," ""You are so slow!"" ",His friend thinks John is an outstanding runner.,His friend thinks John is not a good runner. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: John finished the race way ahead of the other competitors. His friend laughed and said to him, ""You are so slow!"" What did his friend want to convey?
+Options:
+1) John needs new running shoes.
+2) John is an outstanding runner.
+3) John needs new computer. 
+4) John is not a good runner.
+Answer: ",John's friend,John,"{""'IncorrectAssociate'"": 'John needs new running shoes.', ""'CorrectNonLiteral'"": 'John is an outstanding runner.', ""'IncorrectNonSequitur'"": 'John needs new computer. ', ""'IncorrectLiteral'"": 'John is not a good runner.'}",John,"""You're an outstanding runner, no doubt about it!""","""I doubt you're much of a runner!""","""That's okay, I may not be the best but I still enjoy running.""","""Thank you, I've trained hard to improve my running.""",,
+23,irony,"The Jones' had hired a new gardener. After a week the lawn was looking particularly unkempt. John remarked to his wife, ",The Jones' had hired a new gardener. After a week the lawn was looking particularly unkempt. ,"John remarked to his wife, ","""He does such a good job!"" ",John is unhappy with the new gardener.,ohn is very happy with the new gardener. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: The Jones' had hired a new gardener. After a week the lawn was looking particularly unkempt. John remarked to his wife, ""He does such a good job!"" What did John want to convey?
+Options:
+1) He is happy with the new gardener.
+2) He likes daisies.
+3) He likes thrillers. 
+4) He is unhappy with the new gardener.
+Answer: ",John,His wife,"{""'IncorrectLiteral'"": 'He is happy with the new gardener.', ""'IncorrectAssociate'"": 'He likes daisies.', ""'IncorrectNonSequitur'"": 'He likes thrillers. ', ""'CorrectNonLiteral'"": 'He is unhappy with the new gardener.'}",he,"""I'm not very satisfied with the new gardener.""","""I'm extremely pleased with our new gardener.""","""That's great to hear, John.""","""Then we should tell him our expectations or hire someone else.""",,
+24,irony,"It was the night before her exam and Tilly had read none of the course texts. Her brother said, ",It was the night before her exam and Tilly had read none of the course texts. ,"Her brother said, ","""I see your revision is going well.""  ",Her brother thinks Tilly is unready for the exam.,Her brother thinks Tilly is ready for the exam. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: It was the night before her exam and Tilly had read none of the course texts. Her brother said, ""I see your revision is going well.""  What did he want to convey?
+Options:
+1) Tilly cannot find the sneakers.
+2) Tilly is unready for the exam.
+3) Tilly is ready for the exam.
+4) Tilly cannot find the textbook.
+Answer: ",Tilly's brother,Tilly,"{""'IncorrectNonSequitur'"": 'Tilly cannot find the sneakers.', ""'CorrectNonLiteral'"": 'Tilly is unready for the exam.', ""'IncorrectLiteral'"": 'Tilly is ready for the exam.', ""'IncorrectAssociate'"": 'Tilly cannot find the textbook.'}",Tilly,"""You're not prepared enough for the exam yet.""","""I think you're ready for the exam.""","""Thank you for believing in my preparation for the exam.""","""Yes, I know I should have prepared better for this exam.""",,
+25,irony,"Barb and Tony went to a high school reunion. Barb was running late and came underdressed. Tony commented, ",Barb and Tony went to a high school reunion. Barb was running late and came underdressed. ,"Tony commented, ","""Classy outfit."" ",He thought that her dress was not appropriate for the occasion.,Tony really liked her choice of dress. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide what the character in the story is trying to convey. The answer options are 1, 2, 3, or 4.
+
+Scenario: Barb and Tony went to a high school reunion. Barb was running late and came underdressed. Tony commented, ""Classy outfit."" What did Tony want to convey?
+Options:
+1) He thought that Barb forgot to call the cab.
+2) He thought that Barb forgot her purse in the hall.
+3) He thought that her dress was not appropriate for the occasion.
+4) He liked her choice of dress.
+Answer: ",Tony,Barb,"{""'IncorrectNonSequitur'"": 'He thought that Barb forgot to call the cab.', ""'IncorrectAssociate'"": 'He thought that Barb forgot her purse in the hall.', ""'CorrectNonLiteral'"": 'He thought that her dress was not appropriate for the occasion.', ""'IncorrectLiteral'"": 'He liked her choice of dress.'}",he,"""I don't think your dress is quite suitable for this particular occasion.""","""I really liked your choice of dress.""","""Thank you, Tony, I'm glad you liked it.""","""I understand, but I had no time to change into something more fitting.""",,
+1,maxims,"Bob is having a lunch meeting with his boss, Mr. James. Mr. James asks Bob: ""Did you like the presentation that I gave at the board meeting yesterday?"" Bob responds:","Bob is having a lunch meeting with his boss, Mr. James. Mr. James asks Bob: ""Did you like the presentation that I gave at the board meeting yesterday?"" ",Bob responds:," ""I cannot wait for our trip to Japan next week."" ",He disliked the talk that his boss gave but does not want to criticize his boss.  ,He is excited about the upcoming trip to Japan and does not want to talk about anything else. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide why the character in the story responds in a certain way. The answer options are 1, 2, 3, or 4.
+
+Scenario: Bob is having a lunch meeting with his boss, Mr. James. Mr. James asks Bob: ""Did you like the presentation that I gave at the board meeting yesterday?"" Bob responds: ""I cannot wait for our trip to Japan next week."" Why has Bob responded like this?
+Options:
+1) He is excited about the upcoming trip to Japan and does not want to talk about anything else.
+2) He wants to avoid going to Japan next week and wants to discuss it with his boss. 
+3) He disliked the talk that his boss gave but does not want to criticize his boss.  
+4) He liked the talk that his boss gave but does not want to tell him about it.
+Answer: ",Bob,Mr. James,"{""'IncorrectLiteral'"": 'He is excited about the upcoming trip to Japan and does not want to talk about anything else.', ""'IncorrectAssociate'"": 'He wants to avoid going to Japan next week and wants to discuss it with his boss. ', ""'CorrectNonLiteral'"": 'He disliked the talk that his boss gave but does not want to criticize his boss.  ', ""'IncorrectNonLiteral'"": 'He liked the talk that his boss gave but does not want to tell him about it.'}",he,"""I wasn't particularly fond of the presentation given by our superior, but I don't want to come off as critical of him.""","""Indeed, I am so thrilled about the impending journey to Japan, I can't seem to focus on discussing anything else!""","That's great, Bob! Let's continue discussing your upcoming trip to Japan.","""I appreciate your honesty, Bob. It's important for me to receive feedback for improvements.""",,
+2,maxims,"Richard came to visit his friend, Alex. Alex is an artist. Richard brought one of his artworks to Alex and asked Alex: ""What do you think of my painting?"" Alex responds,  ","Richard came to visit his friend, Alex. Alex is an artist. Richard brought one of his artworks to Alex and asked Alex: ""What do you think of my painting?"" ","Alex responds, ","""Have you noticed that I painted the walls?"" ",Alex thinks that Richard's painting is mediocre.,Alex is proud of the painting job that he did. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide why the character in the story responds in a certain way. The answer options are 1, 2, 3, or 4.
+
+Scenario: Richard came to visit his friend, Alex. Alex is an artist. Richard brought one of his artworks to Alex and asked Alex: ""What do you think of my painting?"" Alex responds, ""Have you noticed that I painted the walls?"" Why has Alex responded like this?
+Options:
+1) Alex is proud of the painting job that he did.
+2) Alex is afraid that Richard will become a better painter than he is. 
+3) Alex wants Richards to help him paint the walls.
+4) Alex thinks that Richard's painting is mediocre.
+Answer: ",Alex,Richard,"{""'IncorrectLiteral'"": 'Alex is proud of the painting job that he did.', ""'IncorrectAssociate'"": 'Alex is afraid that Richard will become a better painter than he is. ', ""'IncorrectNonLiteral'"": 'Alex wants Richards to help him paint the walls.', ""'CorrectNonLiteral'"": ""Alex thinks that Richard's painting is mediocre.""}",Alex,"""I believe your painting is fairly ordinary, to be honest.""","""I'm really proud of my own painting job I've done.""","""That's great to hear, Alex. Your hard work really paid off.""","I appreciate your honesty, Alex.",,
+3,maxims,"Leslie and Jane are chatting at a coffee shop. Leslie asks, ""Who was that man that I saw you with last night?"" Jane responds, 
+","Leslie and Jane are chatting at a coffee shop. Leslie asks, ""Who was that man that I saw you with last night?"" 
+","Jane responds, ","""The latte is unbelievable here."" ",She does not want to discuss the topic that Leslie has raised.,Jane thinks that it is the best latte in the town. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide why the character in the story responds in a certain way. The answer options are 1, 2, 3, or 4.
+
+Scenario: Leslie and Jane are chatting at a coffee shop. Leslie asks, ""Who was that man that I saw you with last night?"" Jane responds, ""The latte is unbelievable here."" Why has Jane responded like this?
+Options:
+1) A coffee break is not a good time to discuss men.
+2) She thinks that it is the best latte in the town.
+3) She does not want to discuss the topic that Leslie has raised.
+4) The man who Leslie saw makes unbelievable lattes.
+Answer: ",Jane,Leslie,"{""'IncorrectAssociate'"": 'A coffee break is not a good time to discuss men.', ""'IncorrectLiteral'"": 'She thinks that it is the best latte in the town.', ""'CorrectNonLiteral'"": 'She does not want to discuss the topic that Leslie has raised.', ""'IncorrectNonLiteral'"": 'The man who Leslie saw makes unbelievable lattes.'}",she,"""I'm sorry, I'd rather not delve into that subject you've just brought up.""","""I truly believe that this is the town's best latte.""","""I will have to try it then, Jane.""","""Okay Jane, no problem. Let's chat about something else then.""",,
+4,maxims,"Kelsey is in a bad mood. Every minor thing irritates her. When she sees her husband watching a football game, she yells: ""Can you turn off the TV?"" 
+Her husband replies:","Kelsey is in a bad mood. Every minor thing irritates her. When she sees her husband watching a football game, she yells: ""Can you turn off the TV?"" 
+",Her husband replies:," ""Beer and chips would be awesome. Thanks!"" ",Her husband wants to watch the game.,Her husband wants beer and chips and is thankful for her help.,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide why the character in the story responds in a certain way. The answer options are 1, 2, 3, or 4.
+
+Scenario: Kelsey is in a bad mood. Every minor thing irritates her. When she sees her husband watching a football game, she yells: ""Can you turn off the TV?"" Her husband replies: ""Beer and chips would be awesome. Thanks!"" Why has Kelsey's husband responded like this?
+Options:
+1) He is excited about seeing his wife. 
+2) He pretends that he did not understand his wife's comment because he wants to watch the game.
+3) He is thankful for her offer of beer and chips.
+4) He is happy to turn off the TV right away and to spend more time with his wife.
+Answer: ",Kelsey's husband,Kelsey,"{""'IncorrectAssociate'"": 'He is excited about seeing his wife. ', ""'CorrectNonLiteral'"": ""He pretends that he did not understand his wife's comment because he wants to watch the game."", ""'IncorrectLiteral'"": 'He is thankful for her offer of beer and chips.', ""'IncorrectNonLiteral'"": 'He is happy to turn off the TV right away and to spend more time with his wife.'}",he,"""I want to watch the game, dear""","""Could you please grab me some beer and chips? I really appreciate your help.""","""Sure, I will grab you some beer and chips.""","""Please, I need some quiet right now.""",,
+5,maxims,"Mark is discussing Jane, a senior financial manager who he hired, with his colleague John. Mark asks: ""How is Jane managing her new position?"" Mark says:","Mark is discussing Jane, a senior financial manager who he hired, with his colleague John. Mark asks: ""How is Jane managing her new position?""", Mark says:," ""She has excellent handwriting and is always dressed so nicely."" ",Mark's opinion of Jane as a financial manager is very low.,Mark's opinion of Jane as a financial manager is very high. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide why the character in the story responds in a certain way. The answer options are 1, 2, 3, or 4.
+
+Scenario: Mark is discussing Jane, a senior financial manager who he hired, with his colleague John. Mark asks: ""How is Jane managing her new position?"" Mark says: ""She has excellent handwriting and is always dressed so nicely."" Why has Mark responded like this?
+Options:
+1) Mark's opinion of Jane as a financial manager is very low.
+2) Mark is fond of people who have good handwriting.
+3) Mark's opinion of Jane as a financial manager is very high.
+4) Mark needs to get some new clothes.
+Answer: ",Mark,John,"{""'CorrectNonLiteral'"": ""Mark's opinion of Jane as a financial manager is very low."", ""'IncorrectNonLiteral'"": 'Mark is fond of people who have good handwriting.', ""'IncorrectLiteral'"": ""Mark's opinion of Jane as a financial manager is very high."", ""'IncorrectAssociate'"": 'Mark needs to get some new clothes.'}",he,"""I have a very low opinion of Jane as a financial manager.""","""I hold Jane in very high regard as a financial manager.""","It sounds like you think Jane is a highly competent financial manager, Mark.",Jane appears to be struggling in managing her new role as per your opinion.,,
+6,maxims,"Lucy discusses her trip to Paris with her mom. Lucy says: ""I'd like to visit Vincent when I am in Paris. Where does he live?"" Her mom responds:","Lucy discusses her trip to Paris with her mom. Lucy says: ""I'd like to visit Vincent when I am in Paris. Where does he live?"" ",Her mom responds:," ""Somewhere in France.""", Lucy's mom does not know where exactly Vincent lives.,Lucy's mom knows that Vincent lives somewhere in France. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide why the character in the story responds in a certain way. The answer options are 1, 2, 3, or 4.
+
+Scenario: Lucy discusses her trip to Paris with her mom. Lucy says: ""I'd like to visit Vincent when I am in Paris. Where does he live?"" Her mom responds: ""Somewhere in France."" Why has Lucy's mom responded like this?
+Options:
+1) Lucy's mom is jealous that she is not going to Paris.
+2) Lucy's mom is afraid that Lucy will go to France.
+3) Lucy's mom does not know where exactly Vincent lives.
+4) Lucy's mom knows that Vincent lives somewhere in France.
+Answer: ",Lucy's mom,Lucy,"{""'IncorrectNonLiteral'"": ""Lucy's mom is jealous that she is not going to Paris."", ""'IncorrectAssociate'"": ""Lucy's mom is afraid that Lucy will go to France."", ""'CorrectNonLiteral'"": ""Lucy's mom does not know where exactly Vincent lives."", ""'IncorrectLiteral'"": ""Lucy's mom knows that Vincent lives somewhere in France.""}",she,"""I'm not exactly sure where Vincent lives, dear.""","""I'm sure Vincent lives in France, dear.""","""Okay, mom, Vincent lives in France.""","""Okay Mom, I will ask Vincent directly for his address.""",,
+7,maxims,"Luke missed a wedding reception and wants his wife Melanie to tell him about it. He asks: ""What were you served at the wedding?"" She responds:","Luke missed a wedding reception and wants his wife Melanie to tell him about it. He asks: ""What were you served at the wedding?"" ",She responds:," ""Some food."" ",The food at the wedding was mediocre.,There was some food at the wedding. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide why the character in the story responds in a certain way. The answer options are 1, 2, 3, or 4.
+
+Scenario: Luke missed a wedding reception and wants his wife Melanie to tell him about it. He asks: ""What were you served at the wedding?"" She responds: ""Some food."" Why has Melanie responded like this?
+Options:
+1) There was not a lot of food at the wedding.
+2) The wedding is not about food.
+3) The food at the wedding was mediocre.
+4) The food at the wedding was outstanding.
+Answer: ",Melanie,Luke,"{""'IncorrectLiteral'"": 'There was not a lot of food at the wedding.', ""'IncorrectAssociate'"": 'The wedding is not about food.', ""'CorrectNonLiteral'"": 'The food at the wedding was mediocre.', ""'IncorrectNonLiteral'"": 'The food at the wedding was outstanding.'}",she,"""The food at the wedding wasn't really that impressive""","""There was a very little food available at the wedding""","So, there was a small amount of food at the wedding.","""Oh, so the food wasn't that good then?""",,
+8,maxims,"Mary and Ken are having breakfast. Ken asks Mary: ""How would you like your tea, dear?"" Mary responds, ","Mary and Ken are having breakfast. Ken asks Mary: ""How would you like your tea, dear?"" ","Mary responds, ","""In a cup."" ",Mary is irritated with Ken.,Mary wants Ken to serve her tea in a cup. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide why the character in the story responds in a certain way. The answer options are 1, 2, 3, or 4.
+
+Scenario: Mary and Ken are having breakfast. Ken asks Mary: ""How would you like your tea, dear?"" Mary responds, ""In a cup."" Why has Mary responded like this?
+Options:
+1) Mary wants Ken to serve her tea in a cup.
+2) Mary is irritated with Ken.
+3) Mary is proud of the new cups that she got from Ken for her birthday.
+4) Mary wants Ken to wash a cup that she sees in the sink.  
+Answer: ",Mary,Ken,"{""'IncorrectLiteral'"": 'Mary wants Ken to serve her tea in a cup.', ""'CorrectNonLiteral'"": 'Mary is irritated with Ken.', ""'IncorrectAssociate'"": 'Mary is proud of the new cups that she got from Ken for her birthday.', ""'IncorrectNonLiteral'"": 'Mary wants Ken to wash a cup that she sees in the sink.  '}",Mary,"""You're seriously getting on my nerves right now.""","""Could you please serve me some tea in that cup?""","""Of course, Mary, I will serve you some tea in a cup.""","""I'm sorry, I didn't realize I was annoying you.""",,
+9,maxims,"George and Cindy are about to enter their favorite shoe shop in the mall. George asks Cindy: ""What would you like to buy?"" Cindy responds:","George and Cindy are about to enter their favorite shoe shop in the mall. George asks Cindy: ""What would you like to buy?"" 
+",Cindy responds:," ""A pair of shoes."" ",Cindy does not know what type of shoes she wants to buy.,Cindy does not plan to buy anything but shoes in this store. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide why the character in the story responds in a certain way. The answer options are 1, 2, 3, or 4.
+
+Scenario: George and Cindy are about to enter their favorite shoe shop in the mall. George asks Cindy: ""What would you like to buy?"" Cindy responds: ""A pair of shoes."" Why has Cindy responded like this?
+Options:
+1) Cindy does not plan to buy anything but shoes in this store.
+2) Cindy is excited about going shopping.
+3) Cindy has an obsession with shoes and buys them on every occasion. 
+4) Cindy does not know what type of shoes she wants to buy.
+Answer: ",Cindy,George,"{""'IncorrectLiteral'"": 'Cindy does not plan to buy anything but shoes in this store.', ""'IncorrectAssociate'"": 'Cindy is excited about going shopping.', ""'IncorrectNonLiteral'"": 'Cindy has an obsession with shoes and buys them on every occasion. ', ""'CorrectNonLiteral'"": 'Cindy does not know what type of shoes she wants to buy.'}",Cindy,"""I'm honestly not sure what type of shoes I want to buy.""","""I'm not planning on buying anything from this store except for shoes.""","Okay Cindy, let's focus on finding you some shoes then.","""Alright, let's look around and see what catches your eye.""",,
+10,maxims,"Mike comes home from school. His mom asks him: ""What did you do at school today?"" Mike responds:","Mike comes home from school. His mom asks him: ""What did you do at school today?"" ",Mike responds:," ""some schoolwork.""",He does not want to talk about school with his mom.,He has been doing lots of schoolwork at school. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide why the character in the story responds in a certain way. The answer options are 1, 2, 3, or 4.
+
+Scenario: Mike comes home from school. His mom asks him: ""What did you do at school today?"" Mike responds: ""some schoolwork."" Why has Mike responded like this?
+Options:
+1) He is upset that his dad is not at home.
+2) He is too excited to talk about this at the moment.
+3) He has been doing lots of schoolwork at school.
+4) He does not want to talk about school with his mom.
+Answer: ",Mike,Mike's mom,"{""'IncorrectNonLiteral'"": 'He is upset that his dad is not at home.', ""'IncorrectAssociate'"": 'He is too excited to talk about this at the moment.', ""'IncorrectLiteral'"": 'He has been doing lots of schoolwork at school.', ""'CorrectNonLiteral'"": 'He does not want to talk about school with his mom.'}",he,"""I really don't feel like discussing school right now, Mom.""","""I've been doing a bunch of schoolwork while at school.""","That's good, Mike, keep up the hard work.","""Alright, Mike. We can talk about it when you're ready.""",,
+11,maxims,"Mark, who is a newlywed, is talking to his mom over the phone. His mom asks: ""Did Julie cook your dinner last night?"" 
+Mark responds:","Mark, who is a newlywed, is talking to his mom over the phone. His mom asks: ""Did Julie cook your dinner last night?"" 
+",Mark responds:," ""Well, she placed a number of edible substances into a pot and then heated them until various chemical reactions took place."" ",Mark's wife has little experience with cooking.,Mark's wife has been doing some scientific experiments instead of cooking. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide why the character in the story responds in a certain way. The answer options are 1, 2, 3, or 4.
+
+Scenario: Mark, who is a newlywed, is talking to his mom over the phone. His mom asks: ""Did Julie cook your dinner last night?"" Mark responds: ""Well, she placed a number of edible substances into a pot and then heated them until various chemical reactions took place."" Why has Mark responded like this?
+Options:
+1) Mark's wife has little experience with cooking.
+2) Mark's wife has a lot of experience with cooking.
+3) Mark's wife has been angry with Mark because he did not help her with dinner.  
+4) Mark's wife has been doing some scientific experiments instead of cooking.
+Answer: ",Mark,Mark's mom,"{""'CorrectNonLiteral'"": ""Mark's wife has little experience with cooking."", ""'IncorrectAssociate'"": ""Mark's wife has a lot of experience with cooking."", ""'IncorrectNonLiteral'"": ""Mark's wife has been angry with Mark because he did not help her with dinner.  "", ""'IncorrectLiteral'"": ""Mark's wife has been doing some scientific experiments instead of cooking.""}",he,"""My wife isn't really a whiz in the kitchen, she doesn't have much experience with cooking.""","""My wife has been all caught up in her scientific experiments lately. She's barely had time to do any cooking!""","It's wonderful that she's so passionate about her scientific work, Mark.","""Oh, I see, Julie is still learning to cook.""",,
+12,maxims,"Lenny comes to the kitchen and asks his wife, Marcie: ""What will we have for breakfast?"" 
+Marcie responds:","Lenny comes to the kitchen and asks his wife, Marcie: ""What will we have for breakfast?"" 
+",Marcie responds:," ""A hard-boiled egg cooked in hot water and toast that is toasted evenly on both sides."" ",Marcie thinks that her husband's expectations about breakfast are too high.,Marcie wants to describe in detail how she prepared the breakfast items.,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide why the character in the story responds in a certain way. The answer options are 1, 2, 3, or 4.
+
+Scenario: Lenny comes to the kitchen and asks his wife, Marcie: ""What will we have for breakfast?"" Marcie responds: ""A hard-boiled egg cooked in hot water and toast that is toasted evenly on both sides."" Why has Marcie responded in such a way?
+Options:
+1) Marcie thinks that breakfast is the main meal of the day.
+2) Marcie thinks that her husband's expectations about breakfast are too high.
+3) Marcie wants Lenny to know how his breakfast was made.
+4) Marcie is really good at cooking eggs and making toast.
+Answer: ",Marcie,Lenny,"{""'IncorrectAssociate'"": 'Marcie thinks that breakfast is the main meal of the day.', ""'CorrectNonLiteral'"": ""Marcie thinks that her husband's expectations about breakfast are too high."", ""'IncorrectLiteral'"": 'Marcie wants Lenny to know how his breakfast was made.', ""'IncorrectNonLiteral'"": 'Marcie is really good at cooking eggs and making toast.'}",Marcie,"""Listen, I feel like your expectations about breakfast are just a bit too high.""","""Let me walk you through how I made the breakfast items, Lenny. First, I made the fluffy scrambled eggs. I cracked six large eggs into a bowl and whisked them until the yolks and whites combined for a smooth mixture. Next, I warmed a non-stick frying pan over medium heat, added a small bit of butter, and as soon as it melted, I added the eggs. I stirred gently and constantly with a spatula to get those beautiful, soft curds.","Thank you, Marcie, for explaining your process in preparing the fluffy scrambled eggs.","Sorry, I apologize for having a high expectation for breakfast.",,
+14,maxims,"Mike and Melissa are arguing about the state of secondary education in their state. Mike states: ""Standardized test scores are up 42% in our schools."" Melissa responds:","Mike and Melissa are arguing about the state of secondary education in their state. Mike states: ""Standardized test scores are up 42% in our schools."" ",Melissa responds:," ""And 47% of the kids didn't use the right pencil, 6% were chewing gum during the exam, and 32% yawned while completing their exams."" ",Melissa thinks that statistical information is useless in this debate.,Melissa thinks that statistical information is of great use in this debate. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide why the character in the story responds in a certain way. The answer options are 1, 2, 3, or 4.
+
+Scenario: Mike and Melissa are arguing about the state of secondary education in their state. Mike states: ""Standardized test scores are up 42% in our schools."" Melissa responds: ""And 47% of the kids didn't use the right pencil, 6% were chewing gum during the exam, and 32% yawned while completing their exams."" Why has Melissa responded like this?
+Options:
+1) Melissa thinks that kids attending schools lack subject knowledge. 
+2) Melissa thinks that statistical information is useless in this debate.
+3) Melissa is very knowledgeable about the system of secondary education.
+4) Melissa thinks that statistical information is of great use in this debate.
+Answer: ",Melissa,Mike,"{""'IncorrectNonLiteral'"": 'Melissa thinks that kids attending schools lack subject knowledge. ', ""'CorrectNonLiteral'"": 'Melissa thinks that statistical information is useless in this debate.', ""'IncorrectAssociate'"": 'Melissa is very knowledgeable about the system of secondary education.', ""'IncorrectLiteral'"": 'Melissa thinks that statistical information is of great use in this debate.'}",Melissa,"""I'm of the opinion that in this debate, statistical information doesn't hold any value, Mike.""","""I truly believe that statistical information could prove to be extremely valuable in this debate.""","I agree with you, Melissa, statistical information can provide substantial evidence in this debate.","""Understood, Melissa, let's then focus on qualitative aspects of our education system.""",,
+15,maxims,"Rosy notes to her friend Dan: ""Those strangers at the other end of the subway car are nice.""  
+Dan replies:","Rosy notes to her friend Dan: ""Those strangers at the other end of the subway car are nice.""  
+",Dan replies:," ""Yeah, I bet they have only sweet dreams, eat organic food, do yoga every morning, plant trees, feed homeless, and read a lot of good books.""",He thinks that Rosy has no reason to believe that the strangers are nice.,Dan thinks he knows these people and their lifestyle very well. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide why the character in the story responds in a certain way. The answer options are 1, 2, 3, or 4.
+
+Scenario: Rosy notes to her friend Dan: ""Those strangers at the other end of the subway car are nice."" Dan replies: ""Yeah, I bet they have only sweet dreams, eat organic food, do yoga every morning, plant trees, feed homeless, and read a lot of good books."" Why has Dan responded like this?
+Options:
+1) He knows these people and their lifestyle very well.
+2) He thinks that people who ride subways have many bad habits.
+3) He thinks that Rosy has no reason to believe that the strangers are nice.
+4) He thinks that people who ride subways have many good habits.
+Answer: ",Dan,Rosy,"{""'IncorrectLiteral'"": 'He knows these people and their lifestyle very well.', ""'IncorrectNonLiteral'"": 'He thinks that people who ride subways have many bad habits.', ""'CorrectNonLiteral'"": 'He thinks that Rosy has no reason to believe that the strangers are nice.', ""'IncorrectAssociate'"": 'He thinks that people who ride subways have many good habits.'}",he,"""I believe you have no grounds to assume that these strangers are kind, Rosy.""","""I have a deep understanding of these people and the way they live, Rosy.""","That's great, Dan. Your understanding will be very beneficial.","""I was just sharing my first impression, Dan.""",,
+16,maxims,Berta often forgets to return money that she borrows from her friends. One day Berta asks her friend Freddie for $500. Freddie responds:,Berta often forgets to return money that she borrows from her friends. One day Berta asks her friend Freddie for $500., Freddie responds:," ""Of course, but only when I fly to space."" ",Freddie will never give Berta any money.,Freddie can give Berta some money that he will get for his space expedition. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide why the character in the story responds in a certain way. The answer options are 1, 2, 3, or 4.
+
+Scenario: Berta often forgets to return money that she borrows from her friends. One day Berta asks her friend Freddie for $500. Freddie responds: ""Of course, but only when I fly to space."" Why has Freddie responded like this?
+Options:
+1) Freddie will never give Berta any money.
+2) Freddie can give Berta some money that he will get for his space expedition.
+3) Freddie considers giving the money to Berta. 
+4) Freddie is ready to give money to Berta without any questions.
+Answer: ",Freddie,Berta,"{""'CorrectNonLiteral'"": 'Freddie will never give Berta any money.', ""'IncorrectLiteral'"": 'Freddie can give Berta some money that he will get for his space expedition.', ""'IncorrectAssociate'"": 'Freddie considers giving the money to Berta. ', ""'IncorrectNonLiteral'"": 'Freddie is ready to give money to Berta without any questions.'}",he,"""I'm really sorry, but I'm not going to be able to lend you any money.""","""Once I receive the money from my space expedition, Berta, I would be more than happy to share some of it with you.""","Thank you Freddie, I understand you cannot lend me your money.","I understand, Freddie, it's your money after all.",,
+17,maxims,"Lars and Katy are discussing their CEO. Lars says: ""People regard our CEO Mr. Smith as a real intellectual."" Katy responds:","Lars and Katy are discussing their CEO. Lars says: ""People regard our CEO Mr. Smith as a real intellectual."" ",Katy responds:," ""Sure, he is regarded as an intellectual by kindergarteners.""",Katy doubts that Mr. Smith is a smart individual.,Katy agrees that Mr. Smith is a smart individual. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide why the character in the story responds in a certain way. The answer options are 1, 2, 3, or 4.
+
+Scenario: Lars and Katy are discussing their CEO. Lars says: ""People regard our CEO Mr. Smith as a real intellectual."" Katy responds: ""Sure, he is regarded as an intellectual by kindergarteners."" Why has Katy responded like this?
+Options:
+1) Katy thinks that Mr. Smith works at a kindergarten.
+2) Katy knows that Mr. Smith's kids are kindergarteners.
+3) Katy doubts that Mr. Smith is a smart individual.
+4) Katy agrees that Mr. Smith is a smart individual.
+Answer: ",Katy,Lars,"{""'IncorrectNonLiteral'"": 'Katy thinks that Mr. Smith works at a kindergarten.', ""'IncorrectAssociate'"": ""Katy knows that Mr. Smith's kids are kindergarteners."", ""'CorrectNonLiteral'"": 'Katy doubts that Mr. Smith is a smart individual.', ""'IncorrectLiteral'"": 'Katy agrees that Mr. Smith is a smart individual.'}",Katy,"""I'm not so sure about Mr. Smith's intelligence,"".","""Yes, I do concur. Mr. Smith is indeed a smart individual.""","""I'm glad to hear that you also recognize Mr. Smith's intelligence, Katy.""","""It's interesting that you question Mr. Smith's intellect, Katy.""",,
+18,maxims,"Samantha is talking with her dad about her fiance. Samantha notes: ""John is an innocent person."" 
+Her dad replies:","Samantha is talking with her dad about her fiance. Samantha notes: ""John is an innocent person."" 
+",Her dad replies:," ""Undoubtedly, as innocent as a saint."" ",Samantha's dad thinks that Samantha has an incorrect view of her fiance.,Samantha's dad thinks that Samantha's fiance is a saint. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide why the character in the story responds in a certain way. The answer options are 1, 2, 3, or 4.
+
+Scenario: Samantha is talking with her dad about her fiance. Samantha notes: ""John is an innocent person."" Her dad replies: ""Undoubtedly, as innocent as a saint."" Why has Samantha's dad responded like this?
+Options:
+1) Samantha's dad thinks that John is too religious. 
+2) Samantha's dad thinks that Samantha's fiance is a saint.
+3) Samantha's dad thinks that Samantha has an incorrect view of her fiance.
+4) Samantha's dad is impressed with John's innocence.
+Answer: ",Her dad,Samatha,"{""'IncorrectNonLiteral'"": ""Samantha's dad thinks that John is too religious. "", ""'IncorrectLiteral'"": ""Samantha's dad thinks that Samantha's fiance is a saint."", ""'CorrectNonLiteral'"": ""Samantha's dad thinks that Samantha has an incorrect view of her fiance."", ""'IncorrectAssociate'"": ""Samantha's dad is impressed with John's innocence.""}",he,"""I believe your perspective of your fiance might not be entirely accurate, Samantha.""","""I honestly think your fiance is very pure and nice.""","I'm glad you think highly of him, Dad.","""Dad, I respect your opinion, but I know John well and stand by my perception of him as being innocent.""",,
+19,maxims,"Lenny is saying goodbye to his date Bianka. Lenny asks Bianka: ""Where do you live?"" Bianka responds:","Lenny is saying goodbye to his date Bianka. Lenny asks Bianka: ""Where do you live?""", Bianka responds:," ""I live on the moon."" ",Bianka does not want Lenny to know her address.,Bianka is an alien. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide why the character in the story responds in a certain way. The answer options are 1, 2, 3, or 4.
+
+Scenario: Lenny is saying goodbye to his date Bianka. Lenny asks Bianka: ""Where do you live?"" Bianka responds: ""I live on the moon."" Why has Bianka responded like this?
+Options:
+1) Bianka is not very well educated.
+2) Bianka tries to make Lenny angry with her.
+3) Bianka does not want Lenny to know her address.
+4) Bianka is an alien.
+Answer: ",Bianka,Lenny,"{""'IncorrectNonLiteral'"": 'Bianka is not very well educated.', ""'IncorrectAssociate'"": 'Bianka tries to make Lenny angry with her.', ""'CorrectNonLiteral'"": 'Bianka does not want Lenny to know her address.', ""'IncorrectLiteral'"": 'Bianka is an alien.'}",Bianka,"""I would feel more comfortable if I didn't share my address with you.""","""I would instead live on another planet.""", Bianka," why the moon?""""","""That sounds interesting, Bianka, can you tell me more about your preference?""","""Understood, thank you for your honesty, Bianka."""
+20,maxims,"Annie and Kelly are discussing their plans for summer. Annie asks Kelly: ""How many books do you plan to read this summer?"" Kelly responds:","Annie and Kelly are discussing their plans for summer. Annie asks Kelly: ""How many books do you plan to read this summer?"" ",Kelly responds:," ""A million."" ", Kelly plans to devote a lot of time to reading this summer.,Kelly has made a list of books to read that contains one million titles. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer. Your task is to decide why the character in the story responds in a certain way. The answer options are 1, 2, 3, or 4.
+
+Scenario: Annie and Kelly are discussing their plans for summer. Annie asks Kelly: ""How many books do you plan to read this summer?"" Kelly responds: ""A million."" Why has Kelly responded like this?
+Options:
+1) Kelly cannot count very well.
+2) Kelly has made a list of books to read that contains one million titles.
+3) Kelly is a pathological liar.
+4) Kelly plans to devote a lot of time to reading this summer.
+Answer: ",Kelly,Annie,"{""'IncorrectNonLiteral'"": 'Kelly cannot count very well.', ""'IncorrectLiteral'"": 'Kelly has made a list of books to read that contains one million titles.', ""'IncorrectAssociate'"": 'Kelly is a pathological liar.', ""'CorrectNonLiteral'"": 'Kelly plans to devote a lot of time to reading this summer.'}",Kelly,"""I've decided to spend a great deal of my time reading this summer.""","""I've compiled a list of one million books I plan to read, Annie.""","That's quite an ambitious reading list, Kelly.","""That sounds like a great plan, Kelly!""",,
+1,metaphor,Mary was asked about the town that she has just moved to. Mary responded:,Mary was asked about the town that she has just moved to. ,Mary responded:," ""This town is a chimney."" ",Mary thinks the town is not one of the cleanest ones.,Mary thinks the town is a chimney. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer to each question. The answer options are 1, 2, 3, 4, or 5.
+
+Scenario: Mary was asked about the town that she has just moved to. Mary responded: ""This town is a chimney."" What does Mary mean?
+Options:
+1) The people living in this town are very welcoming.
+2) The town is a chimney.
+3) All houses in this town have chimneys.
+4) Mary found a job at a company installing chimneys.
+5) The town is not one of the cleanest ones.
+Answer: ",Mary,Her friend,"{""'IncorrectNonLiteral'"": 'The people living in this town are very welcoming.', ""'IncorrectLiteral'"": 'The town is a chimney.', ""'IncorrectPlausibleLiteral'"": 'All houses in this town have chimneys.', ""'IncorrectNonSequitur'"": 'Mary found a job at a company installing chimneys.', ""'CorrectNonLiteral'"": 'The town is not one of the cleanest ones.'}",she,"""I don't necessarily think our town is one of the cleanest out there.""","""You know, in my view, this town is just like a chimney.""","""So, you feel the town resembles a chimney, Mary?""",It sounds like you're saying the town could be cleaner.,,
+2,metaphor,Mike said to his expectant wife:,Mike said to his expectant wife:,Mike said to his expectant wife:," ""Our baby is a lovebird's egg.""",Mike and his wife are very much in love with each other.,Mike and his wife thinks their baby is an egg. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer to each question. The answer options are 1, 2, 3, 4, or 5.
+
+Scenario: Mike said to his expectant wife: ""Our baby is a lovebird's egg."" What did Mike mean?
+Options:
+1) Mike is worried that the bird flu virus affected their baby.
+2) Their baby is growing bigger every day.
+3) Mike and his wife are very much in love with each other.
+4) The baby in his wife's womb is the size of an egg.
+5) Their baby is an egg.
+Answer: ",Mike,His wife,"{""'IncorrectNonLiteral'"": 'Mike is worried that the bird flu virus affected their baby.', ""'IncorrectNonSequitur'"": 'Their baby is growing bigger every day.', ""'CorrectNonLiteral'"": 'Mike and his wife are very much in love with each other.', ""'IncorrectPlausibleLiteral'"": ""The baby in his wife's womb is the size of an egg."", ""'IncorrectLiteral'"": 'Their baby is an egg.'}",Mike,"""We are very much in love with each other.""","""Honey, do we sometimes feel like our baby is like an egg?""","Yes, Mike, sometimes we do think our baby is like an egg.","""Yes, we are very much in love with each other.""",,
+3,metaphor,Andrew and Bob were discussing the investment company where Andrew works. Bob said:,Andrew and Bob were discussing the investment company where Andrew works. ,Bob said:," ""The investors are squirrels collecting nuts."" ",Bob thinks they buy stocks hoping for future profit.  ,Bob thinks squirrels were hired to work in the company.  ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer to each question. The answer options are 1, 2, 3, 4, or 5.
+
+Scenario: Andrew and Bob were discussing the investment company where Andrew works. Bob said: ""The investors are squirrels collecting nuts."" What does Bob mean?
+Options:
+1) Bob is allergic to nuts.
+2) The investors dress and eat well.
+3) They buy stocks hoping for future profit.  
+4) Squirrels were hired to work in the company. 
+5) The investors enjoy picking nuts as much as squirrels do.
+Answer: ",Bob,Andrew,"{""'IncorrectNonSequitur'"": 'Bob is allergic to nuts.', ""'IncorrectNonLiteral'"": 'The investors dress and eat well.', ""'CorrectNonLiteral'"": 'They buy stocks hoping for future profit.  ', ""'IncorrectLiteral'"": 'Squirrels were hired to work in the company. ', ""'IncorrectPlausibleLiteral'"": 'The investors enjoy picking nuts as much as squirrels do.'}",he,"""You think we purchase shares with the expectation of making a profit in the future, right?""","""Andrew, believe it or not, I'm under the impression that squirrels have been enlisted to work at our company.""","Bob, I find your belief that squirrels have been hired here quite surprising and peculiar.","Yes, Bob, we buy shares with the aim of making a future profit.",,
+4,metaphor,Mark asked his mom what she thought about his new girlfriend. She replied:,Mark asked his mom what she thought about his new girlfriend. ,She replied:," ""This young lady is 100% polyester."" ",His mom think his girlfriend's behavior was not very natural.,His mom thinks his girlfriend is made of polyester. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer to each question. The answer options are 1, 2, 3, 4, or 5.
+
+Scenario: Mark asked his mom what she thought about his new girlfriend. She replied: ""This young lady is 100% polyester."" What does she mean?
+Options:
+1) His girlfriend's behavior was not very natural.
+2) His girlfriend is made of polyester.
+3) His girlfriend has a beautiful smile. 
+4) His girlfriend wore clothes made of polyester.
+5) The girl made a good impression on Mark's mom
+Answer: ",His mom,Mark,"{""'CorrectNonLiteral'"": ""His girlfriend's behavior was not very natural."", ""'IncorrectLiteral'"": 'His girlfriend is made of polyester.', ""'IncorrectNonSequitur'"": 'His girlfriend has a beautiful smile. ', ""'IncorrectPlausibleLiteral'"": 'His girlfriend wore clothes made of polyester.', ""'IncorrectNonLiteral'"": ""The girl made a good impression on Mark's mom""}",she,"""your girlfriend's behavior seems somewhat unnatural.""","""Your girlfriend is made up of polyester.""",My mom thinks my girlfriend is made of polyester.,"I'll talk to her about it, thanks for sharing your observation, mom.",,
+5,metaphor,Mary said to her husband:,,Mary said to her husband:," ""Our kids are pieces of taffy."" ",Their kids always stick together.,Their kids are sweet candy. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer to each question. The answer options are 1, 2, 3, 4, or 5.
+
+Scenario: Mary said to her husband: ""Our kids are pieces of taffy."" What did she mean? 
+Options:
+1) Their kids eat too many candies.
+2) Their kids argue too much.
+3) Their kids are sweet candy.
+4) Their kids always stick together.
+5) Their kids need to stick to a diet.
+Answer: ",Mary,Her husband,"{""'IncorrectPlausibleLiteral'"": 'Their kids eat too many candies.', ""'IncorrectNonSequitur'"": 'Their kids argue too much.', ""'IncorrectLiteral'"": 'Their kids are sweet candy.', ""'CorrectNonLiteral'"": 'Their kids always stick together.', ""'IncorrectNonLiteral'"": 'Their kids need to stick to a diet.'}",she,"""Our children always remain united.""","""Our children are as delightful as sweet candy.""","Yes, our children are indeed delightful like candy.","""Yes, they always support each other.""",,
+6,metaphor,Mark saw a lady at the party and said to his friend:,Mark saw a lady at the party.,Mark said to his friend:," ""This lady's jewels are bursting stars."" ",Mark thinks the lady's jewelry is shining very brightly.,Mark thinks the lady wears bursting stars. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer to each question. The answer options are 1, 2, 3, 4, or 5.
+
+Scenario: Mark saw a lady at the party and said to his friend: ""This lady's jewels are bursting stars."" What did Mark mean?
+Options:
+1) Mark did not like the lady's jewelry.
+2) The lady's jewelry is shining very brightly.
+3) The lady wears bursting stars.
+4) The lady's jewelry broke into many pieces.
+5) The lady wears some jewelry designed to look like stars.
+Answer: ",Mark,His friend,"{""'IncorrectNonSequitur'"": ""Mark did not like the lady's jewelry."", ""'CorrectNonLiteral'"": ""The lady's jewelry is shining very brightly."", ""'IncorrectLiteral'"": 'The lady wears bursting stars.', ""'IncorrectNonLiteral'"": ""The lady's jewelry broke into many pieces."", ""'IncorrectPlausibleLiteral'"": 'The lady wears some jewelry designed to look like stars.'}",he,"""Wow, have you noticed how brightly that lady's jewelry is shining?""","""That lady there appears to be wearing stars that are exploding!""","Yes, her outfit does resemble stars that are exploding.","Yes, I have noticed, her jewelry is indeed shining very brightly.",,
+7,metaphor,Ben was telling his friend about the fashion show that he attended. He said:,Ben was telling his friend about the fashion show that he attended. ,He said:," ""This model was the blue canary at the show."" ",The model stood out at the fashion show.,The blue canary worked as a model at the show. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer to each question. The answer options are 1, 2, 3, 4, or 5.
+
+Scenario: Ben was telling his friend about the fashion show that he attended. He said: ""This model was the blue canary at the show."" What did Ben mean? 
+Options:
+1) The blue canary worked as a model at the show.
+2) The model stood out at the fashion show.
+3) The model's skin turned blue.
+4) The model came to the show with her pet bird.
+5) The model wore a costume made of blue feathers.
+Answer: ",Ben,His friend,"{""'IncorrectLiteral'"": 'The blue canary worked as a model at the show.', ""'CorrectNonLiteral'"": 'The model stood out at the fashion show.', ""'IncorrectNonLiteral'"": ""The model's skin turned blue."", ""'IncorrectNonSequitur'"": 'The model came to the show with her pet bird.', ""'IncorrectPlausibleLiteral'"": 'The model wore a costume made of blue feathers.'}",he,"""At the fashion show, the model really stood out, don't you think?""","""The blue canary, believe it or not, landed a job as a model at the show.""","That's surprising, I didn't know a blue canary could be a model at a show.","Yes, I agree that the model really stood out at the fashion show.",,
+8,metaphor,Mary said to her granddaughter:,,Mary said to her granddaughter:," ""The queen is our nation's aunt."" ",Mary thinks the queen cares about you from afar.,Mary thinks the queen is an aunt of everyone living in the country. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer to each question. The answer options are 1, 2, 3, 4, or 5.
+
+Scenario: Mary said to her granddaughter: ""The queen is our nation's aunt."" What did Mary mean?
+Options:
+1) The queen has a lot of relatives. 
+2) Mary and her family are related to the queen.
+3) The queen is an aunt of everyone living in the country.
+4) People of the country love the pies that the queen bakes.
+5) The queen cares about you from afar.
+Answer: ",Mary,Her granddaughter,"{""'IncorrectNonSequitur'"": 'The queen has a lot of relatives. ', ""'IncorrectPlausibleLiteral'"": 'Mary and her family are related to the queen.', ""'IncorrectLiteral'"": 'The queen is an aunt of everyone living in the country.', ""'IncorrectNonLiteral'"": 'People of the country love the pies that the queen bakes.', ""'CorrectNonLiteral'"": 'The queen cares about you from afar.'}",she,"""Sweetie, Mary believes that the queen is keeping you in her heart and thoughts, even if she's far away.""","""Sweetheart, I tend to see the queen as everyone in our country's aunt.""","So, you view the queen as a familial figure for all citizens, Grandma?","Thank you, Grandma, it's comforting to know the Queen cares about me even from a distance.",,
+9,metaphor,"Abby and Kyle were walking along the promenade one night, and they saw a couple smiling at each other. Abby noted:","Abby and Kyle were walking along the promenade one night, and they saw a couple smiling at each other. ",Abby noted:," ""This sunset sings to the lovers."" ",It was a very romantic night.,He could hear the sun singing songs. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer to each question. The answer options are 1, 2, 3, 4, or 5.
+
+Scenario: Abby and Kyle were walking along the promenade one night, and they saw a couple smiling at each other. Abby noted: ""This sunset sings to the lovers."" What did Abby mean?
+Options:
+1) He could hear the sun singing songs.
+2) Abby wants to attend a concert with Kyle.
+3) It was a very romantic night.
+4) It was too dark to see any singers performing on the promenade.
+5) There were a lot of musicians and singers performing on the promenade.
+Answer: ",Abby,Kyle,"{""'IncorrectLiteral'"": 'He could hear the sun singing songs.', ""'IncorrectNonSequitur'"": 'Abby wants to attend a concert with Kyle.', ""'CorrectNonLiteral'"": 'It was a very romantic night.', ""'IncorrectNonLiteral'"": 'It was too dark to see any singers performing on the promenade.', ""'IncorrectPlausibleLiteral'"": 'There were a lot of musicians and singers performing on the promenade.'}",they,"""It was such a romantic night, don't you think?""","""I think I can hear the sun singing songs sometimes""","That's interesting Abby, I wasn't aware the sun could produce sounds.","""Yes, it was a very romantic night.""",,
+10,metaphor,"Jessica was giving a talk that her mom attended. After the talk, Jessica's mom called her husband and said:","Jessica was giving a talk that her mom attended. After the talk, Jessica's mom called her husband.",She said:," ""Jessica sailed towards the finish."" ",Jessica's mom thinks Jessica finished her talk successfully.,Jessica's mom thinks Jessica finished the sailing race. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer to each question. The answer options are 1, 2, 3, 4, or 5.
+
+Scenario: Jessica was giving a talk that her mom attended. After the talk, Jessica's mom called her husband and said: ""Jessica sailed towards the finish."" What did she mean?
+Options:
+1) Jessica's talk was a disaster. 
+2) Jessica got interested in sailing.
+3) Jessica finished the sailing race.
+4) Jessica finished her talk successfully.
+5) Jessica was giving a talk about sailing.  
+Answer: ",Jessica's mom,Jessica's husband,"{""'IncorrectNonLiteral'"": ""Jessica's talk was a disaster. "", ""'IncorrectPlausibleLiteral'"": 'Jessica got interested in sailing.', ""'IncorrectLiteral'"": 'Jessica finished the sailing race.', ""'CorrectNonLiteral'"": 'Jessica finished her talk successfully.', ""'IncorrectNonSequitur'"": 'Jessica was giving a talk about sailing.  '}",Jessica,"""Jessica executed her speech successfully.""","""Jessica has just completed her sailing race.""","Yes, Jessica has finished her sailing race.","That's great to hear, Jessica must have prepared well for her speech.",,
+11,metaphor,Jody and Mark were discussing their daughter's behavior. Mark said:,Jody and Mark were discussing their daughter's behavior. ,Mark said:," ""She is walking all over her brothers."" ",Mark sees that she can make her brothers do whatever she wishes.,Mark sees that she is not paying attention when walking and often steps on her little brothers by accident. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer to each question. The answer options are 1, 2, 3, 4, or 5.
+
+Scenario: Jody and Mark were discussing their daughter's behavior. Mark said: ""She is walking all over her brothers."" What did Mark mean?
+Options:
+1) Their daughter finally started to walk.
+2) She can make her brothers do whatever she wishes.
+3) Their daughter should be less aggressive towards her brothers.
+4) She enjoys long walks with her brothers.
+5) She is not paying attention when walking and often steps on her little brothers by accident.
+Answer: ",Mark,Jody,"{""'IncorrectPlausibleLiteral'"": 'Their daughter finally started to walk.', ""'CorrectNonLiteral'"": 'She can make her brothers do whatever she wishes.', ""'IncorrectNonLiteral'"": 'Their daughter should be less aggressive towards her brothers.', ""'IncorrectNonSequitur'"": 'She enjoys long walks with her brothers.', ""'IncorrectLiteral'"": 'She is not paying attention when walking and often steps on her little brothers by accident.'}",she,"""She's got her brothers to do anything she wants.""","""I've noticed you're often not paying attention when you're walking and you've accidentally stepped on our little brothers a few times. Be careful.""",I will pay more attention when I walk to avoid accidentally stepping on people.,"Yes, she is manipulative with her brothers.",,
+12,metaphor,"During a business meeting, the general manager of the company said to the financial manager:",There is a business meeting. ,The general manager of the company said to the financial manager:," ""The new accountant that you hired is a juggler."" ",The general manager finds the newly hired person is good at manipulating many things at once.,The general manager finds that the newly hired person can toss and catch objects in the air. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer to each question. The answer options are 1, 2, 3, 4, or 5.
+
+Scenario: During a business meeting, the general manager of the company said to the financial manager: ""The new accountant that you hired is a juggler."" What did the general manager mean? 
+Options:
+1) The newly hired person dressed up as a clown.
+2) The newly hired person has too many excuses for being late.
+3) The newly hired person used to work in a circus show.
+4) The newly hired person can toss and catch objects in the air.
+5) The newly hired person is good at manipulating many things at once.
+Answer: ",The general manager,The financial manager,"{""'IncorrectNonLiteral'"": 'The newly hired person dressed up as a clown.', ""'IncorrectNonSequitur'"": 'The newly hired person has too many excuses for being late.', ""'IncorrectPlausibleLiteral'"": 'The newly hired person used to work in a circus show.', ""'IncorrectLiteral'"": 'The newly hired person can toss and catch objects in the air.', ""'CorrectNonLiteral'"": 'The newly hired person is good at manipulating many things at once.'}",she,"""The new hire is proving to be quite adept at juggling multiple tasks simultaneously.""","""I've noticed that our new hire has a unique skill. They can toss and catch objects in the air.""",That is an interesting skill; it could certainly be useful in certain situations.,"That is indeed impressive, our team could use such ability.",,
+13,metaphor,Ken was telling his friend about his shopping experience on Black Friday. Ken said:,Ken was telling his friend about his shopping experience on Black Friday. ,Ken said:," ""The store that I went to was a jungle."" ",The store was complete chaos.,The store was in a jungle. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer to each question. The answer options are 1, 2, 3, 4, or 5.
+
+Scenario: Ken was telling his friend about his shopping experience on Black Friday. Ken said: ""The store that I went to was a jungle."" What did Ken mean?
+Options:
+1) There were a lot of tropical trees in that store.
+2) There were a lot of mosquitoes in that store.
+3) The store that he went to sold some exotic pets.
+4) The store was in a jungle.
+5) The store was complete chaos.
+Answer: ",Ken,His friend,"{""'IncorrectPlausibleLiteral'"": 'There were a lot of tropical trees in that store.', ""'IncorrectNonSequitur'"": 'There were a lot of mosquitoes in that store.', ""'IncorrectNonLiteral'"": 'The store that he went to sold some exotic pets.', ""'IncorrectLiteral'"": 'The store was in a jungle.', ""'CorrectNonLiteral'"": 'The store was complete chaos.'}",he,"""You wouldn't believe it, the store was in complete chaos!""","""You wouldn't believe it, but there was actually a store nestled right in the middle of the jungle.""","That sounds fascinating, a store inside a jungle.",That sounds like a very hectic shopping experience.,,
+14,metaphor,Janet was telling her friend about the show that she saw last night. Janet said:,Janet was telling her friend about the show that she saw last night., Janet said:," ""The dancers were butterflies."" ",The dancers flitted around the stage.,Butterflies were dancing on the stage. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer to each question. The answer options are 1, 2, 3, 4, or 5.
+
+Scenario: Janet was telling her friend about the show that she saw last night. Janet said: ""The dancers were butterflies."" What did Janet mean?
+Options:
+1) She did not see any dancers in the show.
+2) Butterflies were dancing on the stage.
+3) The dancers portrayed butterflies in the show.
+4) The dancers flitted around the stage.
+5) There were too many dancers in this show.
+Answer: ",Janet,Her friend,"{""'IncorrectNonSequitur'"": 'She did not see any dancers in the show.', ""'IncorrectLiteral'"": 'Butterflies were dancing on the stage.', ""'IncorrectPlausibleLiteral'"": 'The dancers portrayed butterflies in the show.', ""'CorrectNonLiteral'"": 'The dancers flitted around the stage.', ""'IncorrectNonLiteral'"": 'There were too many dancers in this show.'}",she,"""The dancers were flitting around the stage.""","""There were actual butterflies flying around on the stage.""","Wow, that must have been quite a sight to see.",It sounds like the dancers were moving quickly around the stage.,,
+15,metaphor,Caitlyn was telling her husband about her new co-worker. Caitlyn said:,Caitlyn was telling her husband about her new co-worker. ,Caitlyn said:," ""Sally is a block of ice."" ",Sally does not show any emotions.,Sally is an ice sculpture. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer to each question. The answer options are 1, 2, 3, 4, or 5.
+
+Scenario: Caitlyn was telling her husband about her new co-worker. Caitlyn said: ""Sally is a block of ice."" What did she mean?
+Options:
+1) Sally is very emotional and cries often.
+2) Sally's hands are always cold. 
+3) Sally does not show any emotions.
+4) Sally is an ice sculpture.
+5) Sally is coming down with a cold.
+Answer: ",Caitlyn,Her husband,"{""'IncorrectNonLiteral'"": 'Sally is very emotional and cries often.', ""'IncorrectNonSequitur'"": ""Sally's hands are always cold. "", ""'CorrectNonLiteral'"": 'Sally does not show any emotions.', ""'IncorrectLiteral'"": 'Sally is an ice sculpture.', ""'IncorrectPlausibleLiteral'"": 'Sally is coming down with a cold.'}",Sally,"""Sally never seems to express any sort of feelings or emotions.""","""Did you know that Sally has become an ice sculpture?""","Yes, I was aware that Sally has become an ice sculpture.","That's unusual, most people show some kind of emotion.",,
+16,metaphor,Robert and his wife are discussing their neighbor. Robert said:,Robert and his wife are discussing their neighbor., Robert said:," ""Our neighbor is a sheep."" ",Their neigbor is a follower.,There is a sheep living next to them. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer to each question. The answer options are 1, 2, 3, 4, or 5.
+
+Scenario: Robert and his wife are discussing their neighbor. Robert said: ""Our neighbor is a sheep."" What did Robert mean?  
+Options:
+1) Their neighbor always wears wool sweaters.
+2) Their neigbor is a follower.
+3) Their neigbor is charismatic.
+4) There is a sheep living next to them.
+5) Their neighbor has a unique haircut.
+Answer: ",Robert,His wife,"{""'IncorrectNonLiteral'"": 'Their neighbor always wears wool sweaters.', ""'CorrectNonLiteral'"": 'Their neigbor is a follower.', ""'IncorrectNonSequitur'"": 'Their neigbor is charismatic.', ""'IncorrectLiteral'"": 'There is a sheep living next to them.', ""'IncorrectPlausibleLiteral'"": 'Their neighbor has a unique haircut.'}",he,"""Our neighbor seems to be quite the follower.""","""Our next door have a sheep residing right next to us, dear.""","Yes, I noticed the sheep too, Robert.","Yes, I've also noticed that our neighbor tends to follow others rather than leading.",,
+17,metaphor,Lucy told her teacher:,,Lucy told her teacher:," ""The book that you gave me has more holes in it than Swiss cheese."" ",The plot of the book lacks important components.,Many pages of the book are missing some parts. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer to each question. The answer options are 1, 2, 3, 4, or 5.
+
+Scenario: Lucy told her teacher: ""The book that you gave me has more holes in it than Swiss cheese."" What did Lucy mean?
+Options:
+1) The plot of the book lacks important components.
+2) Many pages of the book are missing some parts.
+3) The book smells funny.
+4) The book is about cheese making in Switzerland. 
+5) The book is in bad shape. 
+Answer: ",Lucy,Her teacher,"{""'CorrectNonLiteral'"": 'The plot of the book lacks important components.', ""'IncorrectLiteral'"": 'Many pages of the book are missing some parts.', ""'IncorrectNonSequitur'"": 'The book smells funny.', ""'IncorrectNonLiteral'"": 'The book is about cheese making in Switzerland. ', ""'IncorrectPlausibleLiteral'"": 'The book is in bad shape. '}",she,"""I believe the book's plot is missing some crucial elements.""","""Many of the pages in the book seem to be missing some parts.""","""I will check the book and if necessary, replace it with a complete one, Lucy.""","""Lucy, could you elaborate on which elements you believe are missing from the plot?""",,
+18,metaphor,The teacher told Sam:,,The teacher told Sam:," ""You have too much on your plate."" ",Sam has too many things to take care of.,Sam has too much food on his plate. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer to each question. The answer options are 1, 2, 3, 4, or 5.
+
+Scenario: The teacher told Sam: ""You have too much on your plate."" What did the teacher mean?
+Options:
+1) Sam has too many things to take care of.
+2) Sam should think about his dietary habits.
+3) Sam should share food with his classmates. 
+4) Sam should finish all the food that is on his plate.
+5) Sam has too much food on his plate.
+Answer: ",The teacher,Sam,"{""'CorrectNonLiteral'"": 'Sam has too many things to take care of.', ""'IncorrectPlausibleLiteral'"": 'Sam should think about his dietary habits.', ""'IncorrectNonLiteral'"": 'Sam should share food with his classmates. ', ""'IncorrectNonSequitur'"": 'Sam should finish all the food that is on his plate.', ""'IncorrectLiteral'"": 'Sam has too much food on his plate.'}",Sam,"""You have too many responsibilities on your plate.""","""You have served yourself too much food.""","I understand, I will reduce the amount of food on my plate.",I am overwhelmed with all the tasks I need to accomplish.,,
+19,metaphor,"Melissa was discussing a new sales manager, who was hired a couple of days ago:","Melissa was discussing a new sales manager, who was hired a couple of days ago:","Melissa says,"," ""She is a babe in the woods.""",Melissa thinks the new sales manager is very inexperienced. ,"Melissa thinks the new sales manager is a baby, who lives in the woods. ","Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer to each question. The answer options are 1, 2, 3, 4, or 5.
+
+Scenario: Melissa was discussing a new sales manager, who was hired a couple of days ago: ""She is a babe in the woods."" What did Melissa mean?
+Options:
+1) The new sales manager used to work as a babysitter. 
+2) The new sales manager is too young.
+3) The new sales manager is very inexperienced. 
+4) The new sales manager lives off of the grid.
+5) The new sales manager is a baby, who lives in the woods.
+Answer: ",Melissa,Her manager,"{""'IncorrectNonSequitur'"": 'The new sales manager used to work as a babysitter. ', ""'IncorrectPlausibleLiteral'"": 'The new sales manager is too young.', ""'CorrectNonLiteral'"": 'The new sales manager is very inexperienced. ', ""'IncorrectNonLiteral'"": 'The new sales manager lives off of the grid.', ""'IncorrectLiteral'"": 'The new sales manager is a baby, who lives in the woods.'}",she,"""I really believe our new sales manager lacks the necessary experience.""","""I think the new manager's house is somewhere in the woods ""","Melissa, your assumption is incorrect, as I reside in the city and not in the woods.","""Let's give him some time to adapt and learn, Melissa.""",,
+20,metaphor,John told his fiance:,,John told his fiance:," ""You are the tomato sauce to my pasta."" ",John thinks him and his fiance are meant to be together.,John thinks the tomato sauce that his fiance makes goes well with his pasta. ,"Task: You will read short stories that describe everyday situations. Each story will be followed by a multiple-choice question. Read each story and choose the best answer to each question. The answer options are 1, 2, 3, 4, or 5.
+
+Scenario: John told his fiance: ""You are the tomato sauce to my pasta."" What did John mean?
+Options:
+1) They enjoy Italian cuisine.
+2) They are meant to be together.
+3) The tomato sauce that she makes goes well with his pasta.
+4) He would love some pasta for dinner.
+5) His fiance has bright red lips.
+Answer: ",John,His fiance,"{""'IncorrectPlausibleLiteral'"": 'They enjoy Italian cuisine.', ""'CorrectNonLiteral'"": 'They are meant to be together.', ""'IncorrectLiteral'"": 'The tomato sauce that she makes goes well with his pasta.', ""'IncorrectNonLiteral'"": 'He would love some pasta for dinner.', ""'IncorrectNonSequitur'"": 'His fiance has bright red lips.'}",he,"""I believe we are meant to be together.""","""The tomato sauce you make pairs really well with my pasta.""","I'm glad you enjoy it, I'll make it more often.","""I believe the same, John.""",,
